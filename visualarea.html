@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>視覺聯絡區-逃生計畫</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        /* *{
+            border: black 1px solid;
+        } */
+        nav{
+            position: fixed;
+            height: 10vh;
+            width: 100vw;
+            background-color: #0a0607;
+            z-index: 3;
+            display: inline-flex;
+        }
+        nav a{
+            height: inherit;
+        }
+        nav a img{
+            position: relative;
+            display: inline;
+            height: inherit;
+            flex-flow: column;
+            margin-left: 1em;
+        }
+        nav ol{
+            display: inline-flex;
+            position: absolute;
+            right: 1em;
+        }
+        nav ol a{
+            margin: auto 1em;
+            width: 2em;
+        }
+        nav ol a li{
+            color: #ffffff;
+            list-style: none;
+        }
+        .keep{
+            height:10vh;
+        }
+        section{
+            margin: 1em 10%;
+        }
+        section div img{
+            width: 6em;
+            height: 6em;
+        }
+        section div h2{
+            margin-left: 2em;
+        }
+        .border_flex{
+            display: flex;
+            flex-direction: column;
+            border: black 3px solid;
+            margin: 2em auto;
+        }
+        .title_flex{
+            display: flex;
+            flex-direction: row;
+            margin: 1em 0;
+        }
+        .title_flex h2{
+            align-content: center;
+            margin-left: 1em;
+        }
+        .mem_flex{
+            position:relative;
+            width:inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+        .mem p{
+            text-align: center;
+        }
+        .mem_img{
+            width: 9em;
+            height: 9em;
+            border-radius: 9em;
+            border: black 1px solid;
+            margin: 1em auto;
+        }
+        .job_flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+        .job_job{
+            width: 12em;
+            border: black 5px solid;
+            margin: 2em 1em;
+        }
+        .job_job h4{
+            margin: 2em auto;
+            text-align: center;
+        }
+        .job_job p{
+            margin: 4em auto;
+            text-align: left;
+            width: fit-content;
+            height: 5em;
+        }
+        .intro_flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .intro_flex p{
+            text-align: left;
+            width: fit-content;
+            margin: auto 0;
+        }
+        .intro_flex img{
+            height: 24em;
+            width: 24em;
+        }
+        .link_flex{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        footer{
+            height: 9em;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1em 2em 1em 2em;
+            margin: 2em auto;
+        }
+        .foot{
+            color:white;
+            width: 50%;
+        }
+        i{
+            margin: 1em auto;
+            font-size: 5em;
+        }
+        #fb{
+            color: #3b5998;
+        }
+        #ig{
+            color: #e1306c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+            <ol>
+                <a href="frontpage.html"><li>首頁</li></a>
+                <a href="about.html"><li>關於我們</li></a>
+                <a><li>作品介紹</li></a>
+                <a href="contact.html"><li>聯絡我們</li></a>
+            </ol>
+    </nav>
+    <div class="keep"></div>
+    <section>
+        <div class="title_flex">
+            <img src="visualarea.png">
+            <h2>視覺聯絡區</h2>
+        </div>
+        <div class="border_flex">
+            <div>
+                <h2>團隊成員</h2>
+                <div class="mem_flex">
+                    <div class="mem">
+                        <h4>唐承安</h4>
+                        <img class="mem_img">
+                        <p>
+                            幾點?
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>洪蜜禪</h4>
+                        <img class="mem_img">
+                        <p>
+                            是誰?
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>陳子與</h4>
+                        <img class="mem_img">
+                        <p>
+                            吃啥?
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>程安瑜</h4>
+                        <img class="mem_img">
+                        <p>
+                            在哪?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div class="job">
+            <h2>工作分配</h2>
+            <div class="job_flex">
+                <div class="job_job">
+                    <h4>首席財務官</h4>
+                    <p>
+                        唐唐，先幫我記著。
+                    </p>
+                </div>
+                <div class="job_job">
+                    <h4>生產總指導</h4>
+                    <p>
+                        蜜蜜，是禪不是蟬。    
+                    </p>
+                </div>
+                <div class="job_job">
+                    <h4>市場經理人</h4>
+                    <p>
+                        子子，是與不是興。         
+                    </p>
+                </div>
+                <div class="job_job">
+                    <h4>多媒體總監</h4>
+                    <p>
+                        安安，抱歉我忘了。           
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>作品簡介</h2>
+            <div class="intro_flex">
+                <p>你是誰？在這個世界裡，扮演什麼角色？
+                    <br>視覺聯絡區用照片、訪談、展出
+                    <br>幫你、你們、我們回答：
+                    <br>當世界問起我，我會說＿＿</p>
+                <img src="visualarea.png">
+            </div>
+        </div>
+        <div>
+            <h2>相關連結</h2>
+            <div class="link_flex">
+                <div>
+                    <a href="https://www.facebook.com/visualarea/"><i class="fab fa-facebook-square" id="fb"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/visualarea/"><i class="fab fa-instagram" id="ig"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <h4>贊助商資訊</h4>
+        </div>
+        <div class="foot">
+            <h4>聯絡我們</h4>
+            <p>
+                電話：
+                <br>信箱：
+                <br>ＦＢ：
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

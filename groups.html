@@ -5,9 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>逃生計畫-首頁</title>
-    
+    <style>
+        nav{
+            position: fixed;
+            height: 10vh;
+            width: 100vw;
+            background-color: #0a0607;
+            z-index: 3;
+            display: inline-flex;
+        }
+        nav a{
+            height: inherit;
+        }
+        nav a img{
+            position: relative;
+            display: inline;
+            height: inherit;
+            flex-flow: column;
+            margin-left: 1em;
+        }
+        nav ol{
+            display: inline-flex;
+            position: absolute;
+            right: 1em;
+        }
+        nav ol a{
+            margin: auto 1em;
+            width: 2em;
+        }
+        nav ol a li{
+            color: #ffffff;
+            list-style: none;
+        }
+        .keep{
+            height:10vh;
+        }
+        footer{
+            height: 9em;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1em 2em 1em 2em;
+            margin: 2em auto;
+        }
+        .foot{
+            color:white;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+            <ol>
+                <a href="frontpage.html"><li>首頁</li></a>
+                <a href="about.html"><li>關於我們</li></a>
+                <a><li>作品介紹</li></a>
+                <a href="contact.html"><li>聯絡我們</li></a>
+            </ol>
+    </nav>
+    <div class="keep"></div>
+    <section>
+
+    </section>
+    <footer>
+        <div class="foot">
+            <h4>贊助商資訊</h4>
+        </div>
+        <div class="foot">
+            <h4>聯絡我們</h4>
+            <p>
+                電話：
+                <br>信箱：
+                <br>ＦＢ：
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
