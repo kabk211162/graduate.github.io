@@ -1,0 +1,96 @@
+section{
+    margin: 1em 10%;
+}
+section div img{
+    width: 6em;
+    height: 6em;
+}
+section div h2{
+    margin-left: 2em;
+}
+.border_flex{
+    display: flex;
+    flex-direction: column;
+    /* border: black 3px solid; */
+    margin: 2em auto;
+}
+.title_flex{
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+}
+.title_flex h2{
+    align-content: center;
+    margin-left: 1em;
+}
+.mem_flex{
+    position:relative;
+    width:inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.mem{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.mem p{
+    margin-top: 1em;
+    text-align: center;
+}
+.mem_img{
+    width: 9em;
+    height: 9em;
+    border-radius: 9em;
+    border: black 1px solid;
+    margin: 1em auto;
+    display: flex;
+}
+.intro_flex{
+    height: 24em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.intro_flex p{
+    text-align: left;
+    width: fit-content;
+    margin: auto 0;
+}
+.team{
+    text-align: left;
+    height: 1em;
+    margin: 2em 0;
+}
+.header_flex img{
+    height: 24em;
+    width: 24em;
+}
+.header_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.link_flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+i{
+    margin: 1em auto;
+    font-size: 3em;
+}
+#fb{
+    color: #3b5998;
+}
+#ig{
+    color: #e1306c;
+}
+#yt{
+    color: #ff0000;
+}
+#web{
+    color: lightgray;
+}

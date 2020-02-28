@@ -5,17 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>視覺聯絡區-逃生計畫</title>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
-    <link rel="stylesheet" type="text/css" href="css/groups.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        section{
+            margin: 1em 10%;
+        }
+        section div img{
+            width: 6em;
+            height: 6em;
+        }
+        section div h2{
+            margin-left: 2em;
+        }
+        .border_flex{
+            display: flex;
+            flex-direction: column;
+            /* border: black 3px solid; */
+            margin: 2em auto;
+        }
+        .mem_flex{
+            position:relative;
+            width:inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+        .mem p{
+            text-align: center;
+            margin-top: 2em;
+        }
+        .mem_img{
+            width: 9em;
+            height: 9em;
+            border-radius: 9em;
+            border: black 1px solid;
+            margin: 1.5em auto;
+        }
+        .intro_flex{
+            height: 24em;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .intro_flex p{
+            text-align: left;
+            width: fit-content;
+            margin: auto 0;
+        }
+        .h2_h2{
+            margin: 2em 0;
+        }
+        .team{
+            text-align: left;
+            height: 1em;
+            margin: 2em 0;
+        }
+        .header_flex img{
+            height: 24em;
+            width: 24em;
+        }
+        .header_flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -30,10 +94,10 @@
     <div class="keep"></div>
     <section>
         <div class="header_flex">
-                <img src="img/visualarea.png">
+                <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
         <div class="header">
                 <div class="intro_flex">
-                    <h2 class="team">當世界問起我</h2>
+                    <h2 class="team">畢籌組</h2>
                     <p>你是誰？在這個世界裡，扮演什麼角色？
                         <br>視覺聯絡區用照片、訪談、展出
                         <br>幫你、你們、我們回答：
@@ -44,54 +108,55 @@
         </div>
         <div class="border_flex">
             <div>
-                <h2>團隊成員</h2>
+                <h2 class="h2_h2">團隊成員</h2>
                 <div class="mem_flex">
                     <div class="mem">
-                        <h4>唐承安</h4>
-                        <p>首席財務官</p>
+                        <h4>何浚捷</h4>
+                        <p>總召 視覺</p>
                         <img class="mem_img">
                         <p>
-                            幾點?
+                            
                         </p>
                     </div>
                     <div class="mem">
-                        <h4>洪蜜禪</h4>
-                        <p>生產總指導</p>
+                        <h4>許柏悅</h4>
+                        <p>行政 公關</p>
                         <img class="mem_img">
                         <p>
-                            是誰?
+                            
                         </p>
                     </div>
                     <div class="mem">
-                        <h4>陳子與</h4>
-                        <p>市場經理人</p>
+                        <h4>林芷懷</h4>
+                        <p>執秘</p>
                         <img class="mem_img">
                         <p>
-                            吃啥?
+                            
                         </p>
                     </div>
                     <div class="mem">
-                        <h4>程安瑜</h4>
-                        <p>多媒體總監</p>
+                        <h4>黃俊軒</h4>
+                        <p>視覺 粉專</p>
                         <img class="mem_img">
                         <p>
-                            在哪?
+                            
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>翁邦晏</h4>
+                        <p>總務 場器</p>
+                        <img class="mem_img">
+                        <p>
+                            減肥？不用減肥
+                            <br>是其他人太瘦
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <h2>相關連結</h2>
-            <div class="link_flex">
-                <div>
-                    <a href="https://www.facebook.com/visualarea/"><i class="fab fa-facebook-square" id="fb"></i></a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/visualarea/"><i class="fab fa-instagram" id="ig"></i></a>
-                </div>
-            </div>
-        </div>
+            <h2 class="h2_h2">活動項目</h2>
+            
         </div>
     </section>
     <footer>

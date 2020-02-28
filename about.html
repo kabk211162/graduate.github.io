@@ -4,218 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>關於我們</title>
+    <title>關於我們-逃生計畫</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/allpages.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <style>
-        /* *{
-            border: black 1px solid;
-        } */
-        nav{
-            position: fixed;
-            height: 10vh;
+        .banner{
+            height: 80vh;
             width: 100vw;
             background-color: #0a0607;
-            z-index: 3;
-            display: inline-flex;
-        }
-        nav a{
-            height: inherit;
-        }
-        nav a img{
             position: relative;
-            display: inline;
+            display:flex;
+        }
+        .banner img{
             height: inherit;
-            flex-flow: column;
-            margin-left: 1em;
-        }
-        nav ol{
-            display: inline-flex;
-            position: absolute;
-            right: 1em;
-        }
-        nav ol a{
-            margin: auto 1em;
-            width: 2em;
-        }
-        nav ol a li{
-            color: #ffffff;
-            list-style: none;
-        }
-        .keep{
-            height:10vh;
-        }
-        section{
-            margin: 1vh 2.5%;
-            border: black 3px solid;
-            position: relative;
-        }
-        section div h2{
-            margin-left:2em;
-        }
-        .mem_flex{
+            margin: 0 auto;
             position:relative;
-            width:inherit;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            align-content: stretch;
-        }
-        section div div img{
-            width: 9em;
-            height: 9em;
-            border-radius: 9em;
-            border: black 1px solid;
-            margin: 1em auto;
-        }
-        .member{
-            /* margin: 1em 3em;
-            width: 12em; */
-            flex-shrink: 1;
-        }
-        section div div p{
             text-align: center;
-        }
-        .work_flex{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
             flex-flow: wrap;
         }
-        .job{
-            width: 16em;
-            border: black 5px solid;
-            margin: 2em 1em;
+        section{
+            margin: 3em 10%;
         }
-        .job h4{
-            margin: 2em auto;
-            text-align: center;
-        }
-        .job p{
-            margin: 4em auto;
-            text-align: left;
-            width: fit-content;
-        }
-        footer{
-            height: 9em;
-            background-color: black;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 1em 2em 1em 2em;
-            margin: 2em auto;
-        }
-        .foot{
-            color:white;
-            width: 50%;
+        section div{
+            margin: 3em auto;
         }
     </style>
 </head>
 <body>
     <nav>
-            <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-            <ol>
-                <a href="frontpage.html"><li>首頁</li></a>
-                <a href="about.html"><li>關於我們</li></a>
-                <a><li>作品介紹</li></a>
-                <a href="contact.html"><li>聯絡我們</li></a>
-            </ol>
+        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol>
+            <a href="frontpage.html"><li>首頁</li></a>
+            <a href="works.html"><li>作品介紹</li></a>
+            <a href="about.html"><li>關於我們</li></a>
+            <a href="contact.html"><li>聯絡我們</li></a>
+        </ol>
     </nav>
+
     <div class="keep"></div>
+        <div class="banner">
+            <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+        </div>
+
     <section>
         <div>
-            <h2>團隊成員</h2>
-            <div class="mem_flex">
-                <div class="member">
-                    <h4>何浚捷</h4>
-                    <img>
-                    <p></p>
-                </div>
-                <div class="member">
-                    <h4>許柏悅</h4>
-                    <img>
-                    <p></p>
-                </div>
-                <div class="member">
-                    <h4>林芷懷</h4>
-                    <img>
-                    <p></p>
-                </div>
-                <div class="member">
-                    <h4>黃俊軒</h4>
-                    <img>
-                    <p></p>
-                </div>
-                <div class="member">
-                    <h4>翁邦晏</h4>
-                    <img>
-                    <p>減肥？不用減肥<br>是其他人太瘦</p>
-                </div>
-            </div>
-        </div>
-        <div class="work">
-            <h2>工作分配</h2>
-            <div class="work_flex">
-                <div class="job">
-                    <h4>總召</h4>
-                    <p></p>
-                </div>
-                <div class="job">
-                    <h4>執秘</h4>
-                    <p></p>
-                </div>
-                <div class="job">
-                    <h4>行政</h4>
-                    <p></p>
-                </div>
-                <div class="job">
-                    <h4>場器</h4>
-                    <p>鋸木頭鉅到手軟
-                        <br>鋸完木頭5根手指都還在覺得開心
-                        <br>主要工作是尋找需要的器材
-                        <br>場地部分感謝其他人carry
-                        <br>幫忙做了很多協調
-                        <br>網站努力生產中
-                    </p>
-                </div>
-                <div class="job">
-                    <h4>公關</h4>
-                    <p></p>
-                </div>
-                <div class="job">
-                    <h4>總務</h4>
-                    <p>收錢收錢收錢
-                        <br>收組內的錢
-                        <br>收班上的錢
-                        <br>審核控制活動預算
-                        <br>但好像有點小小超支（？
-                        <br>手上有好多好多錢
-                        <br>但實際上總務吃土中</p>
-                </div>
-                <div class="job">
-                    <h4>粉專</h4>
-                    <p></p>
-                </div>
-            </div>
+            <h2>關於傳科系畢業成果展</h2>
+            <p>國立交通大學傳播與科技學系強調多元發展,學習領域橫跨影視多媒體、行銷公關實務、傳統新聞製作;我們期許自己的視野不被框架所限制,作品不受單一主題所約束,充分將每一位同學的獨特風格展現。
+                <br>
+                <br>交通大學傳播與科技學系109級畢業成果展的主題訂為《逃生計劃》,對我們而言,畢業成果展代表的不只是一種成長、與下一個階段的橋樑,更是我們對自己大學四年所學的期許。
+            </p>
         </div>
         <div>
-            <h2>關於畢籌</h2>
+            <h2>關於交大傳播與科技學系</h2>
+            <p>
+                國立交通大學傳播與科技學系以傳播專業知識和技能為基底，著重創新傳播科技的原理、運用與分析，終極目標為培養傳播領域的頂尖工作者與領導者。我們是全國唯一的傳播與科技學系，跟國內外傳播科系相較，除了傳播專業所強調的整合性、跨學門、多技能學習，本系更獨樹一幟地開創嶄新的傳播專業主軸－－傳播科技。「以傳播科技為主軸的傳播專業訓練」正是本系奠基與發展的核心理念。 
+                <br>
+                <br>為了實踐上述核心理念，我們擁有傑出優秀的師資、獨立完整的系館空間、先進豐富的教學與研究設備，以及與傳播實務界的密切聯繫。本系所有課程均以當前傳播問題為導向，兼顧理論、方法與實用面向，教學方式嚴謹而活潑。我們堅持小班架構與低生師比，以提昇教學品質和學習效果，師生互動也非常密切。我們致力讓傳科系不僅成為一個卓越的教育與研究機構，也是一個探索傳播知識宇宙的團隊，以及開心學習與共同成長的大家庭。
+            </p>
         </div>
         <div>
-            <h2>活動項目</h2>
+            <h2>關於109級畢業生</h2>
+            <p>
+                本屆畢業成果展由交大傳科系109級的39名同學製作、展覽。109級同學們從108年6月開始尋找指導老師、嘗試適合自己的作品主題，努力將自己於傳科系四年所學，放入本次展覽作品中。
+                <br>
+                <br>本次展覽共有10組同學推出作品展覽，另設有一組策展組負責本次展覽宣傳及展場規劃。10組作品中，有整合行銷企劃、影片拍攝剪輯以及論文研究等不同面向的主題，探索社會上不同族群不同的議題，期望能透過大學生涯中最後的作品，一同完成我們的《逃生計劃》。
+            </p>
         </div>
     </section>
     <footer>
-        <div class="foot">
-            <h4>贊助商資訊</h4>
-        </div>
-        <div class="foot">
-            <h4>聯絡我們</h4>
-            <p>
-                電話：
-                <br>信箱：
-                <br>ＦＢ：
-            </p>
-        </div>
+            <div class="foot">
+                <h4>贊助商資訊</h4>
+            </div>
+            <div class="foot">
+                <h4>聯絡我們</h4>
+                <p>
+                    電話：
+                    <br>信箱：
+                    <br>ＦＢ：
+                </p>
+            </div>
     </footer>
 </body>
 </html>
