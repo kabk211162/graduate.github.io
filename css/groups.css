@@ -44,7 +44,7 @@ section div h2{
     width: 9em;
     height: 9em;
     border-radius: 9em;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     margin: 1em auto;
     display: flex;
 }
