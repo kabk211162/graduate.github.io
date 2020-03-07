@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/glitch.css">
     <title>逃生計畫</title>
     <style>
         body{
@@ -21,28 +22,67 @@
             width: 95%;
             height: 95vh;
             background-color: rgba(255,255,255,0.2);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         .btn a{
             color: #ffffff;
+            text-decoration: none;
+        }
+        .btn a:hover{
+            text-decoration: none;
         }
         .btn{
+            height: 1.5em;
             width: 5em;
             text-align: center;
             font-size: 3em;
-            margin: 45vh auto 0 auto;
+            /* margin: 20% auto 0 auto; */
             border: #ffffff 3px solid;
             border-radius: 3em;
-            padding: 0.5em
+            padding: 0.5em;
+            margin-top: 25%;
         }
         .btn:hover{
             background-color: rgba(255,255,255,0.5);
+        }
+        #shing_chu{
+            margin-top: 40%;
+        }
+        #taipei{
+            margin-top: 3%;
         }
     </style>
 </head>
 <body>
     <div class="cont">
+        <div id="shing_chu">
+            <div class="container">
+                <p>5/13 新竹展</p>
+                <p>5/13 新竹展</p>
+                <p>5/13 新竹展</p>
+            </div> 
+            <div class="container">
+                <p>新竹貳貳柒酒吧</p>
+                <p>新竹貳貳柒酒吧</p>
+                <p>新竹貳貳柒酒吧</p>
+            </div>
+        </div>
         <div class="btn">
             <a href="frontpage.html">開始逃生</a>
+        </div>
+        <div id="taipei">
+            <div class="container">
+                <p>5/29-5/31 臺北展</p>
+                <p>5/29-5/31 臺北展</p>
+                <p>5/29-5/31 臺北展</p>
+            </div> 
+            <div class="container">
+                <p>台北剝皮寮演藝廳</p>
+                <p>台北剝皮寮演藝廳</p>
+                <p>台北剝皮寮演藝廳</p>
+            </div>
         </div>
     </div>
 </body>

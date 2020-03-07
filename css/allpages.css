@@ -55,3 +55,6 @@ footer{
     color:white;
     width: 50%;
 }
+.foot p{
+    margin: 1em 2em;
+}

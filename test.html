@@ -14,130 +14,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <style>
-        body{
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-content: stretch;
-        }
-        section{
-            margin: 3em 10%;
-        }
-         .slider-container{
-            display: flex;
-            flex-direction: row;
-        }
-        .mid_swiper-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            position: relative;
-            overflow-x: hidden;
-            margin: 0;
-        }
-        .swiper-nav{
-            display: flex;
-            align-self:baseline;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 0;
-            height: 2.5em;
-            align-self: center;
-            width: 100%;
-        }
-        .swiper-slide{
-            margin-right: 0;
-            width: fit-content;
-            display: flex;
-            justify-content: center;
-        }
-        .mid_swiper-button-prev,
-        .mid_swiper-button-next {
-            font-size: 2em;
-            cursor: pointer;
-            z-index: 3;
-            margin: auto 10%;
-        }
-        .team_img{
-            border: black 1px solid;
-            height: 15em;
-            width: 15em;
-        }
-        .three_flex{
-            width: 80%;
-            margin: 3em auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    </style>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/glitch.css">
 </head>
 <body>
-        <div class="slider-container">
-            <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-                <div class="mid_swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script>
-
-            // 輪播的swiper
-            var mid_swiper = new Swiper('.mid_swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                slidesPerGroup: 1,
-                loop: true,
-                loopFillGroupWithBlank: false,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.mid_swiper-button-next',
-                    prevEl: '.mid_swiper-button-prev',
-                },
-                breakpoints: {
-                    575: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                }
-            });
-        </script>
+    <div>
+        <div class="container">
+            <p>5/13 新竹展</p>
+            <p>5/13 新竹展</p>
+            <p>5/13 新竹展</p>
+        </div> 
+        <div class="container">
+            <p>新竹貳貳柒酒吧</p>
+            <p>新竹貳貳柒酒吧</p>
+            <p>新竹貳貳柒酒吧</p>
+        </div>
+    </div>
 </body>
 </html>

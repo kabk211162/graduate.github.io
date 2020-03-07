@@ -21,6 +21,8 @@
             background-color: #0a0607;
             position: relative;
             display:flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .banner img{
             height: inherit;
@@ -173,6 +175,57 @@
             height: 8px;
         }
 
+        video{
+            width: 60%;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .arrow{
+            display: flex;
+            justify-content: center;
+        }
+
+        #slide_down{
+            z-index: 2;
+            color: #4E9156;
+            font-size: 4em;
+            animation:TestMove 2s infinite;
+            -moz-animation:TestMove 2s infinite;
+            -webkit-animation:TestMove 2s infinite;
+        }
+
+        @keyframes TestMove{
+            from { 
+                margin: -0.75em auto 1.25em auto;
+                opacity: 0.25;
+            }
+            to {
+                margin: 0em auto 0.5em auto;
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes TestMove{
+            from { 
+                margin: -0.75em auto 1.25em auto;
+                opacity: 0.25;
+            }
+            to {
+                margin: 0em auto 0.5em auto;
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes TestMove{
+            from { 
+                margin: -0.75em auto 1.25em auto;
+                opacity: 0.25;
+            }
+            to {
+                margin: 0em auto 0.5em auto;
+                opacity: 1;
+            }
+        }
+
         @media screen and (max-width: 500px) {
             .step p {
                 font-size: 11px;
@@ -180,6 +233,7 @@
             }
         }
     </style>
+    
 </head>
 <body>
     <nav>
@@ -196,21 +250,20 @@
         <div class="banner">
             <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
         </div>
+        <a href="#a_tag" id="a_tag" title="向下滑動"><div class="arrow"><i class="fas fa-chevron-down" id="slide_down"></i></div></a>
 
     <section>
-        <div>
-            <h2>Logo 設計</h2>
-            <div class="logo_flex">
-                <img>
-                <p></p>
-                <img>
-                <p></p>
-            </div>
-        </div>
-        
-        <div>
+        <div id="about_esc">
             <h2>關於逃生計畫</h2>
-            <p class="esc_about">「逃生計劃」，期許我們逃脫日常生活的枷鎖，提供一個能讓參展組別無後顧之憂地盡情發想、創作以及實踐的場域。在畢業成果展中，每個人都是最獨一無二且璀璨的焦點。</p>
+            <p class="esc_about">
+                「逃生計劃」，期許我們逃脫日常生活的枷鎖，提供一個能讓參展組別無後顧之憂地盡情發想、創作以及實踐的場域。在畢業成果展中，每個人都是最獨一無二且璀璨的焦點。
+                <br>
+                <br>Logo的設計，「逃生計畫」字樣採用了手寫字體，藉以表達每個人都是獨一無二的，就像手寫字一樣有自己獨特的風格。中間的圓洞則是一個山洞的出口，象徵著我們逃生計畫的終點。
+                <br>
+                <br>這四年裡，我們到底過著怎麼樣的生活？想要模擬哪位大師的人生，最終只落得迎合社會口味的結果。
+                <br>就這一次，跟著我逃離世界的枷鎖。而你，願不願意和我一起參與這個計劃？
+            </p>
+            <video src="https://video.ftpe7-4.fna.fbcdn.net/v/t39.24130-2/88206490_1065140603842206_8507959796020246939_n.mp4?_nc_cat=107&_nc_sid=985c63&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=UQsgH2kPwlsAX9I-Yad&_nc_ht=video.ftpe7-4.fna&oh=39c82aa7d7650e012a6db4fe0c3437cb&oe=5E8150C0"></video> 
         </div>
 
         <div>
@@ -219,28 +272,28 @@
                 <div class="mid_swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/visualarea.png"></a>
+                            <a href="visualarea.html"><img class="team_img" src="img/visualarea.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/愉生logo.png"></a>
+                            <a href="愉生.html"><img class="team_img" src="img/愉生logo.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/心居落塵logo.png"></a>
+                            <a href="心居落塵.html"><img class="team_img" src="img/心居落塵logo.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/littlexclusive.jpg"></a>
+                            <a href="littlexclusive.html"><img class="team_img" src="img/littlexclusive.jpg"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/im_the_waster.png"></a>
+                            <a href="im_the_waster.html"><img class="team_img" src="img/im_the_waster.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/grandpa_ma_tea.png"></a>
+                            <a href="grandpa_ma_tea.html"><img class="team_img" src="img/grandpa_ma_tea.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img" src="img/feelings_dept.png"></a>
+                            <a href="feelings_dept.html"><img class="team_img" src="img/feelings_dept.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
+                            <a href="女子好工作好女子生活.html"><img class="team_img"></a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://www.google.com.tw"><img class="team_img"></a>
@@ -359,9 +412,8 @@
             <div class="foot">
                 <h4>聯絡我們</h4>
                 <p>
-                    電話：
-                    <br>信箱：
-                    <br>ＦＢ：
+                    總召：何浚捷
+                    <br>電話：0917811449
                 </p>
             </div>
     </footer>
