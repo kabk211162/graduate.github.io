@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,48 +18,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <style>
-        .banner{
+        .banner {
             height: 80vh;
             width: 100vw;
             background-color: #0a0607;
             position: relative;
-            display:flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        .banner img{
-            height: inherit;
+
+        .banner img {
+            height: 100%;
             margin: 0 auto;
-            position:relative;
-            text-align: center;
-            flex-flow: wrap;
+            position: relative;
+            max-width: 80vh;
+            max-height: 80vh;
         }
-        section{
+
+        section {
             margin: 3em 10%;
+            position: relative;
         }
-        section div{
+
+        .block {
             margin: 3em auto;
         }
-        .logo_flex{
+
+        .data{
+            margin: 3em auto;
+        }
+
+        .logo_flex {
             display: flex;
             flex-direction: row;
             flex-flow: wrap;
             justify-content: space-around;
         }
-        .logo_flex img{
+
+        .logo_flex img {
             height: 10em;
             width: 10em;
             border: black 1px solid;
         }
-        .esc_about{
+
+        .esc_about {
             padding: 2em 10%;
         }
 
-        .slider-container{
+        .slider-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
+            margin: 3em auto;
         }
+
         .mid_swiper-container {
             display: flex;
             flex-direction: row;
@@ -67,9 +83,10 @@
             overflow-x: hidden;
             margin: 0;
         }
-        .swiper-nav{
+
+        .swiper-nav {
             display: flex;
-            align-self:baseline;
+            align-self: baseline;
             flex-direction: row;
             justify-content: space-around;
             margin: 0;
@@ -77,30 +94,34 @@
             align-self: center;
             width: 100%;
         }
-        .swiper-slide{
-            margin-right: 0;
+
+        .swiper-slide {
             width: fit-content;
             display: flex;
             justify-content: center;
         }
+
         .mid_swiper-button-prev,
         .mid_swiper-button-next {
             font-size: 2em;
             cursor: pointer;
             z-index: 3;
-            margin:0;
+            margin: auto 0;
         }
-        .team_img{
+
+        .team_img {
             /* border: black 1px solid; */
             height: 15em;
             width: 15em;
         }
-        .data_flex{
+
+        .data_flex {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
-        .data_text_flex{
+
+        .data_text_flex {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -108,8 +129,11 @@
 
         .container {
             max-width: 100%;
-            margin: 0 auto;
-            height: 10em;
+            margin: 3em auto;
+            height: 15em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .step-indicator {
@@ -145,14 +169,14 @@
         .step p {
             text-align: center;
             position: absolute;
-            bottom: -3em;
+            bottom: -6em;
             width: 8em;
             height: 3.5em;
             color: #4E9156;
         }
 
-        .step .step_p{
-            bottom: 5em;
+        .step .step_p {
+            bottom: 2em;
             color: black;
         }
 
@@ -178,51 +202,56 @@
             height: 8px;
         }
 
-        video{
+        video {
             width: 60%;
             display: flex;
             margin: 0 auto;
         }
 
-        .arrow{
+        .arrow {
             display: flex;
             justify-content: center;
         }
 
-        #slide_down{
+        #slide_down {
             z-index: 2;
             color: #4E9156;
             font-size: 4em;
-            animation:TestMove 2s infinite;
-            -moz-animation:TestMove 2s infinite;
-            -webkit-animation:TestMove 2s infinite;
+            animation: TestMove 2s infinite;
+            -moz-animation: TestMove 2s infinite;
+            -webkit-animation: TestMove 2s infinite;
         }
 
-        @keyframes TestMove{
-            from { 
+        @keyframes TestMove {
+            from {
                 margin: -0.75em auto 1.25em auto;
                 opacity: 0.25;
             }
+
             to {
                 margin: 0em auto 0.5em auto;
                 opacity: 1;
             }
         }
-        @-moz-keyframes TestMove{
-            from { 
+
+        @-moz-keyframes TestMove {
+            from {
                 margin: -0.75em auto 1.25em auto;
                 opacity: 0.25;
             }
+
             to {
                 margin: 0em auto 0.5em auto;
                 opacity: 1;
             }
         }
-        @-webkit-keyframes TestMove{
-            from { 
+
+        @-webkit-keyframes TestMove {
+            from {
                 margin: -0.75em auto 1.25em auto;
                 opacity: 0.25;
             }
+
             to {
                 margin: 0em auto 0.5em auto;
                 opacity: 1;
@@ -236,27 +265,39 @@
             }
         }
     </style>
-    
+
+
 </head>
+
 <body>
     <nav>
         <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
         <ol>
-            <a href="frontpage.html"><li>首頁</li></a>
-            <a href="works.html"><li>作品介紹</li></a>
-            <a href="about.html"><li>關於我們</li></a>
-            <a href="contact.html"><li>聯絡我們</li></a>
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
         </ol>
     </nav>
 
     <div class="keep"></div>
-        <div class="banner">
-            <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
-        </div>
-        <a href="#a_tag" id="a_tag" title="向下滑動"><div class="arrow"><i class="fas fa-chevron-down" id="slide_down"></i></div></a>
+    <div class="banner">
+        <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+    </div>
+    <a id="a_tag" title="向下滑動" onclick="downTo();">
+        <div class="arrow"><i class="fas fa-chevron-down" id="slide_down"></i></div>
+    </a>
 
-    <section>
-        <div id="about_esc">
+    <section id="section">
+        <div id="about_esc" class="block">
             <h2>關於逃生計畫</h2>
             <p class="esc_about">
                 「逃生計劃」，期許我們逃脫日常生活的枷鎖，提供一個能讓參展組別無後顧之憂地盡情發想、創作以及實踐的場域。在畢業成果展中，每個人都是最獨一無二且璀璨的焦點。
@@ -266,125 +307,99 @@
                 <br>這四年裡，我們到底過著怎麼樣的生活？想要模擬哪位大師的人生，最終只落得迎合社會口味的結果。
                 <br>就這一次，跟著我逃離世界的枷鎖。而你，願不願意和我一起參與這個計劃？
             </p>
-            <video src="https://video.ftpe7-4.fna.fbcdn.net/v/t39.24130-2/88206490_1065140603842206_8507959796020246939_n.mp4?_nc_cat=107&_nc_sid=985c63&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=UQsgH2kPwlsAX9I-Yad&_nc_ht=video.ftpe7-4.fna&oh=39c82aa7d7650e012a6db4fe0c3437cb&oe=5E8150C0"></video> 
+            <video
+                src="https://video.ftpe7-4.fna.fbcdn.net/v/t39.24130-2/88206490_1065140603842206_8507959796020246939_n.mp4?_nc_cat=107&_nc_sid=985c63&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=UQsgH2kPwlsAX9I-Yad&_nc_ht=video.ftpe7-4.fna&oh=39c82aa7d7650e012a6db4fe0c3437cb&oe=5E8150C0"></video>
         </div>
 
-        <div>
+        <div class="block">
             <h2>畢製作品</h2>
             <div class="slider-container">
+                <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
                 <div class="mid_swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="visualarea.html"><img class="team_img" src="img/visualarea.png"></a>
+                            <a href="visualarea.html" target="_blank"><img class="team_img" src="img/visualarea.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="愉生.html"><img class="team_img" src="img/愉生logo.png"></a>
+                            <a href="愉生.html" target="_blank"><img class="team_img" src="img/愉生logo.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="心居落塵.html"><img class="team_img" src="img/心居落塵logo.png"></a>
+                            <a href="心居落塵.html" target="_blank"><img class="team_img" src="img/心居落塵logo.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="littlexclusive.html"><img class="team_img" src="img/littlexclusive.jpg"></a>
+                            <a href="littlexclusive.html" target="_blank"><img class="team_img" src="img/littlexclusive.jpg"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="im_the_waster.html"><img class="team_img" src="img/im_the_waster.png"></a>
+                            <a href="im_the_waster.html" target="_blank"><img class="team_img" src="img/im_the_waster.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="grandpa_ma_tea.html"><img class="team_img" src="img/grandpa_ma_tea.png"></a>
+                            <a href="grandpa_ma_tea.html" target="_blank"><img class="team_img" src="img/grandpa_ma_tea.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="feelings_dept.html"><img class="team_img" src="img/feelings_dept.png"></a>
+                            <a href="feelings_dept.html" target="_blank"><img class="team_img" src="img/feelings_dept.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="女子好工作好女子生活.html"><img class="team_img"></a>
+                            <a href="女子好工作好女子生活.html" target="_blank"><img class="team_img" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p320x320/89511162_107434744208385_7251567046775799808_n.png?_nc_cat=102&_nc_sid=dbb9e7&_nc_ohc=1ZuK3WA7PzAAX855gYK&_nc_ht=scontent-tpe1-1.xx&oh=483c5c0a72d806c3ad32b2b9cb7eaa53&oe=5E8F45C3"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
+                            <a href="https://www.google.com.tw" target="_blank"><img class="team_img"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw"><img class="team_img"></a>
+                            <a href="https://www.google.com.tw" target="_blank"><img class="team_img"></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="swiper-nav">
-                    <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-                    <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-                </div>
+                <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
             </div>
-            
+
         </div>
 
-        <div>
+        <div class="block">
             <h2>畢展活動</h2>
             <div class="container">
-                    <section class="step-indicator">
-                            <div class="indicator-line active"></div>
-                        <div class="step step1 active">
-                            <div class="step-icon"></div>
-                          <p>108/12/02
-                              <br>粉專上線
-                          </p>
-                        </div>
-                      <div class="indicator-line active"></div>
-                      <div class="step step2">
-                          <div class="step-icon"></div>
-                        <p>
-                            108/12/15
-                            <br>第一波抽獎
+                <div class="step-indicator">
+                    <div class="indicator-line active"></div>
+                    <div class="step step1 active">
+                        <div class="step-icon"></div>
+                        <p>108/12/02
+                            <br>粉專上線
                         </p>
-                      </div>
-                      <div class="indicator-line active"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
+                    </div>
+                    <div class="indicator-line active"></div>
+                    <div class="step step3">
+                        <div class="step-icon"></div>
                         <p class="step_p">
                             108/12/16-108/12/27
                             <br>逃生電話亭
                         </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
-                        <p>
-                            109/03/10
-                            <br>網站上線
-                        </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
-                        <p class="step_p">
-                            109/04/01
-                            <br>校慶擺攤
-                        </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step step3">
+                        <div class="step-icon"></div>
                         <p class="step_p">
                             109/05/13
-                            <br>裝置藝術-床
+                            <br>裝置藝術
                         </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step step3">
+                        <div class="step-icon"></div>
                         <p class="step_p">
                             109/05/13
                             <br>新竹展
                         </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                      <div class="step step3">
-                          <div class="step-icon"></div>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step step3">
+                        <div class="step-icon"></div>
                         <p class="step_p">
                             109/05/29-109/06/01
                             <br>臺北展
                         </p>
-                      </div>
-                      <div class="indicator-line"></div>
-                    </section>
-                  </div>
+                    </div>
+                    <div class="indicator-line"></div>
+                </div>
+            </div>
         </div>
 
         <div class="data">
@@ -404,48 +419,60 @@
                     </p>
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.699479927855!2d121.5007517624031!3d25.0368554580512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9a8d017b6dd%3A0xff3361bbadd40fe9!2z5Ymd55qu5a-u5q235Y-y6KGX5Y2A!5e0!3m2!1szh-TW!2stw!4v1582496847199!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.699479927855!2d121.5007517624031!3d25.0368554580512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9a8d017b6dd%3A0xff3361bbadd40fe9!2z5Ymd55qu5a-u5q235Y-y6KGX5Y2A!5e0!3m2!1szh-TW!2stw!4v1582496847199!5m2!1szh-TW!2stw"
+                        width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-            <div class="foot">
-                <h4>贊助商資訊</h4>
-            </div>
-            <div class="foot">
-                <h4>聯絡我們</h4>
-                <p>
-                    總召：何浚捷
-                    <br>電話：0917811449
-                </p>
-            </div>
+        <div class="foot">
+            <h4>贊助商資訊</h4>
+        </div>
+        <div class="foot">
+            <h4>聯絡我們</h4>
+            <p>
+                總召：何浚捷
+                <br>電話：0917811449
+            </p>
+        </div>
     </footer>
+
+    <script>
+        function downTo() {	
+            var elmnt = document.getElementById('a_tag').offsetTop;
+            $("#a_tag").on("click", function () { $("html,body").stop().animate({ scrollTop: elmnt + 30 }); })
+        } 
+        downTo();	
+    </script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
 
-            // 輪播的swiper
-            var mid_swiper = new Swiper('.mid_swiper-container', {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                slidesPerGroup: 1,
-                loop: true,
-                loopFillGroupWithBlank: false,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
+        // 輪播的swiper
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
                 },
-                navigation: {
-                    nextEl: '.mid_swiper-button-next',
-                    prevEl: '.mid_swiper-button-prev',
-                },
-                breakpoints: {
-                    575: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                }
-            });
-        </script>
+            }
+        });
+    </script>
 </body>
+
 </html>
