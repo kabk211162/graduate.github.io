@@ -47,7 +47,7 @@
             margin: 3em auto;
         }
 
-        .data{
+        .data {
             margin: 3em auto;
         }
 
@@ -202,8 +202,8 @@
             height: 8px;
         }
 
-        video {
-            width: 60%;
+        #icon01 {
+            width: 30%;
             display: flex;
             margin: 0 auto;
         }
@@ -222,9 +222,10 @@
             -webkit-animation: TestMove 2s infinite;
         }
 
-        #a_tag{
+        #a_tag {
             cursor: pointer;
         }
+
         @keyframes TestMove {
             from {
                 margin: -0.75em auto 1.25em auto;
@@ -274,8 +275,9 @@
 
 <body>
     <nav>
-        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-        <ol>
+        <a href="frontpage.html"><img id="ico" style="opacity: 0;"
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol style="display: none;">
             <a href="frontpage.html">
                 <li>首頁</li>
             </a>
@@ -289,11 +291,13 @@
                 <li>聯絡我們</li>
             </a>
         </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
     </nav>
 
     <div class="keep"></div>
     <div class="banner">
-        <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+        <img
+            src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
     </div>
     <a id="a_tag" title="向下滑動" onclick="downTo();">
         <div class="arrow"><i class="fas fa-chevron-down" id="slide_down"></i></div>
@@ -310,8 +314,7 @@
                 <br>這四年裡，我們到底過著怎麼樣的生活？想要模擬哪位大師的人生，最終只落得迎合社會口味的結果。
                 <br>就這一次，跟著我逃離世界的枷鎖。而你，願不願意和我一起參與這個計劃？
             </p>
-            <video
-                src="https://video.ftpe7-4.fna.fbcdn.net/v/t39.24130-2/88206490_1065140603842206_8507959796020246939_n.mp4?_nc_cat=107&_nc_sid=985c63&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=UQsgH2kPwlsAX9I-Yad&_nc_ht=video.ftpe7-4.fna&oh=39c82aa7d7650e012a6db4fe0c3437cb&oe=5E8150C0"></video>
+            <img id="icon01" src="icon01.jpg">
         </div>
 
         <div class="block">
@@ -321,7 +324,8 @@
                 <div class="mid_swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="visualarea.html" target="_blank"><img class="team_img" src="img/visualarea.png"></a>
+                            <a href="visualarea.html" target="_blank"><img class="team_img"
+                                    src="img/visualarea.png"></a>
                         </div>
                         <div class="swiper-slide">
                             <a href="愉生.html" target="_blank"><img class="team_img" src="img/愉生logo.png"></a>
@@ -330,25 +334,30 @@
                             <a href="心居落塵.html" target="_blank"><img class="team_img" src="img/心居落塵logo.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="littlexclusive.html" target="_blank"><img class="team_img" src="img/littlexclusive.jpg"></a>
+                            <a href="littlexclusive.html" target="_blank"><img class="team_img"
+                                    src="img/littlexclusive.jpg"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="im_the_waster.html" target="_blank"><img class="team_img" src="img/im_the_waster.png"></a>
+                            <a href="im_the_waster.html" target="_blank"><img class="team_img"
+                                    src="img/im_the_waster.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="grandpa_ma_tea.html" target="_blank"><img class="team_img" src="img/grandpa_ma_tea.png"></a>
+                            <a href="grandpa_ma_tea.html" target="_blank"><img class="team_img"
+                                    src="img/grandpa_ma_tea.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="feelings_dept.html" target="_blank"><img class="team_img" src="img/feelings_dept.png"></a>
+                            <a href="feelings_dept.html" target="_blank"><img class="team_img"
+                                    src="img/feelings_dept.png"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="女子好工作好女子生活.html" target="_blank"><img class="team_img" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p320x320/89511162_107434744208385_7251567046775799808_n.png?_nc_cat=102&_nc_sid=dbb9e7&_nc_ohc=1ZuK3WA7PzAAX855gYK&_nc_ht=scontent-tpe1-1.xx&oh=483c5c0a72d806c3ad32b2b9cb7eaa53&oe=5E8F45C3"></a>
+                            <a href="女子好工作好女子生活.html" target="_blank"><img class="team_img"
+                                    src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p320x320/89511162_107434744208385_7251567046775799808_n.png?_nc_cat=102&_nc_sid=dbb9e7&_nc_ohc=1ZuK3WA7PzAAX855gYK&_nc_ht=scontent-tpe1-1.xx&oh=483c5c0a72d806c3ad32b2b9cb7eaa53&oe=5E8F45C3"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw" target="_blank"><img class="team_img"></a>
+                            <a href="夏洛克觀察日記.html" target="_blank"><img class="team_img"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.google.com.tw" target="_blank"><img class="team_img"></a>
+                            <a href="媒體探查記.html" target="_blank"><img class="team_img"></a>
                         </div>
                     </div>
                 </div>
@@ -380,7 +389,7 @@
                     <div class="step step3">
                         <div class="step-icon"></div>
                         <p class="step_p">
-                            109/05/13
+                            109/05/04-109/05/08
                             <br>裝置藝術
                         </p>
                     </div>
@@ -432,21 +441,23 @@
     <footer>
         <div class="foot">
             <h4>贊助商資訊</h4>
+            <p>持續商業洽談中...</p>
         </div>
         <div class="foot">
             <h4>聯絡我們</h4>
             <p>
                 總召：何浚捷
                 <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
             </p>
         </div>
     </footer>
 
     <script>
-        function downTo() {	
+        function downTo() {
             var elmnt = document.getElementById('a_tag').offsetTop;
             $("#a_tag").on("click", function () { $("html,body").stop().animate({ scrollTop: elmnt + 30 }); })
-        } 
+        }
         downTo();	
     </script>
 
@@ -455,9 +466,9 @@
 
         // 輪播的swiper
         var mid_swiper = new Swiper('.mid_swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            slidesPerGroup: 1,
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 2,
             loop: true,
             loopFillGroupWithBlank: false,
             pagination: {
@@ -476,6 +487,7 @@
             }
         });
     </script>
+    <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
 
 </html>

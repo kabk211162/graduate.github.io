@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,99 +12,76 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" type="text/css" href="css/groups.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <style>
-        section{
-            margin: 1em 10%;
-        }
-        section div img{
-            width: 6em;
-            height: 6em;
-        }
-        section div h2{
-            margin-left: 2em;
-        }
-        .border_flex{
+        .flex_our_work{
             display: flex;
-            flex-direction: column;
-            /* border: black 3px solid; */
+            flex-direction: row;
+            justify-content: space-around;
             margin: 2em auto;
         }
-        .mem_flex{
-            position:relative;
-            width:inherit;
+        .our_work{
+            width: 27%;
+            height: 27em;
+            border: black 3px solid;
+            border-radius: 12px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            align-content: stretch;
-        }
-        .mem p{
-            text-align: center;
-            margin-top: 2em;
-        }
-        .mem_img{
-            width: 9em;
-            height: 9em;
-            border-radius: 9em;
-            border: black 1px solid;
-            margin: 1.5em auto;
-        }
-        .intro_flex{
-            height: 24em;
-            display: inline-flex;
             flex-direction: column;
             justify-content: space-around;
         }
-        .intro_flex p{
-            text-align: left;
-            width: fit-content;
-            margin: auto 0;
+        .our_work img{
+            width: 90%;
+            margin: 0 auto;
         }
-        .h2_h2{
-            margin: 2em 0;
-        }
-        .team{
-            text-align: left;
-            height: 1em;
-            margin: 2em 0;
-        }
-        .header_flex img{
-            height: 24em;
-            width: 24em;
-        }
-        .header_flex{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+        .our_work h4{
+            margin: 0 auto;
+            font-weight: bolder;
         }
     </style>
 </head>
+
 <body>
     <nav>
-        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-            <ol>
-                <a href="frontpage.html"><li>首頁</li></a>
-                <a href="works.html"><li>作品介紹</li></a>
-                <a href="about.html"><li>關於我們</li></a>
-                <a href="contact.html"><li>聯絡我們</li></a>
-            </ol>
+        <a href="frontpage.html"><img id="ico"
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
     </nav>
     <div class="keep"></div>
     <section>
         <div class="header_flex">
-                <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
-        <div class="header">
+            <img
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+            <div class="header">
                 <div class="intro_flex">
-                    <h2 class="team">畢籌組</h2>
-                    <p>你是誰？在這個世界裡，扮演什麼角色？
-                        <br>視覺聯絡區用照片、訪談、展出
-                        <br>幫你、你們、我們回答：
-                        <br>當世界問起我，我會說＿＿
+                    <h2 class="team">避仇組</h2>
+                    <p>
+                        逃生，逃往離世界枷鎖的計畫
+                        <br>四年裡，我們努力掙脫這世界的枷鎖
+                        <br>
+                        <br>畢籌，籌辦了逃生計畫
+                        <br>在本次疫情夾擊下做的每一個決策
+                        <br>為了讓同學們無後顧之憂的創作
+                        <br>畢籌，不只是畢籌，更是要避仇
                     </p>
                 </div>
             </div>
@@ -115,25 +93,25 @@
                     <div class="mem">
                         <h4>何浚捷</h4>
                         <p>總召 視覺</p>
-                        <img class="mem_img">
+                        <img class="mem_img" src="face/IMG_9105.JPG">
                         <p>
-                            
+                            好想睡覺
                         </p>
                     </div>
                     <div class="mem">
                         <h4>許柏悅</h4>
                         <p>行政 公關</p>
-                        <img class="mem_img">
+                        <img class="mem_img" src="face/IMG_9140.JPG">
                         <p>
-                            
+
                         </p>
                     </div>
                     <div class="mem">
                         <h4>林芷懷</h4>
                         <p>執秘</p>
-                        <img class="mem_img">
+                        <img class="mem_img" src="face/IMG_9113.JPG">
                         <p>
-                            
+
                         </p>
                     </div>
                     <div class="mem">
@@ -141,13 +119,13 @@
                         <p>視覺 粉專</p>
                         <img class="mem_img">
                         <p>
-                            
+
                         </p>
                     </div>
                     <div class="mem">
                         <h4>翁邦晏</h4>
                         <p>總務 場器</p>
-                        <img class="mem_img">
+                        <img class="mem_img" src="face/IMG_9124.JPG">
                         <p>
                             減肥？不用減肥
                             <br>是其他人太瘦
@@ -158,20 +136,34 @@
         </div>
         <div>
             <h2 class="h2_h2">活動項目</h2>
-            
+            <div class="flex_our_work">
+                <div class="our_work">
+                    <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
+                    <h4>逃生電話亭</h4>
+                </div>
+                <div class="our_work">
+                    <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
+                    <h4>拍攝大頭貼</h4>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div class="foot">
             <h4>贊助商資訊</h4>
+            <p>持續商業洽談中...</p>
         </div>
         <div class="foot">
             <h4>聯絡我們</h4>
             <p>
-                    總召：何浚捷
-                    <br>電話：0917811449
-                </p>
+                總召：何浚捷
+                <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
+            </p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
+
 </html>

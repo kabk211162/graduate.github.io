@@ -1,7 +1,7 @@
 section{
-    margin: 1em 10%;
+    margin: 2em 10%;
 }
-section div img{
+section > div > img{
     width: 6em;
     height: 6em;
 }
@@ -90,4 +90,12 @@ i{
 }
 #web{
     color: lightgray;
+}
+.fan_page{
+    display: flex;
+    flex-direction: row;
+}
+.fan_page a{
+    margin: auto 1em;
+    color: black;
 }

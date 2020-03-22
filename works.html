@@ -37,8 +37,8 @@
             margin-top: 3em;
         }
         .team_img{
-            height: 12em;
-            width: 12em;
+            height:14em;
+            width: 14em;
         }
         .team_a{
             margin: 0 auto;
@@ -67,15 +67,25 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="frontpage.html"><img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-        <ol>
-            <a href="frontpage.html"><li>首頁</li></a>
-            <a href="works.html"><li>作品介紹</li></a>
-            <a href="about.html"><li>關於我們</li></a>
-            <a href="contact.html"><li>聯絡我們</li></a>
-        </ol>
-    </nav>
+        <nav>
+                <a href="frontpage.html"><img id="ico"
+                        src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+                <ol style="display: none;">
+                    <a href="frontpage.html">
+                        <li>首頁</li>
+                    </a>
+                    <a href="works.html">
+                        <li>作品介紹</li>
+                    </a>
+                    <a href="about.html">
+                        <li>關於我們</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>聯絡我們</li>
+                    </a>
+                </ol>
+                <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+            </nav>
     <div class="keep"></div>
 
     <section>
@@ -153,14 +163,18 @@
     <footer>
         <div class="foot">
             <h4>贊助商資訊</h4>
+            <p>持續商業洽談中...</p>
         </div>
         <div class="foot">
             <h4>聯絡我們</h4>
             <p>
                 總召：何浚捷
                 <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
             </p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
 </html>

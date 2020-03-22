@@ -1,3 +1,15 @@
+#menu{
+    color: white;
+    font-size: 3em;
+}
+.menu_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     position: fixed;
@@ -11,7 +23,7 @@ nav{
 nav a{
     height: inherit;
 }
-nav a img{
+#ico{
     position: relative;
     height: inherit;
     display: inline;
@@ -27,6 +39,10 @@ nav ol a{
     width: 2.5em;
     margin: auto 1em;
     text-decoration: none;
+    text-align: center;
+}
+nav ol a:hover{
+    border-block-end: #ffffff 3px solid;
 }
 a:hover{
     text-decoration: none;
@@ -57,4 +73,12 @@ footer{
 }
 .foot p{
     margin: 1em 2em;
+}
+#FBdct{
+    color:white;
+    text-decoration: none;
+}
+#FBdct:hover{
+    color: white;
+    text-decoration: none;
 }
