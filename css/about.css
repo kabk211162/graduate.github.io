@@ -1,0 +1,79 @@
+.banner{
+    height: 80vh;
+    width: 100vw;
+    background-color: #0a0607;
+    position: relative;
+    display:flex;
+}
+.banner img{
+    height: inherit;
+    margin: 0 auto;
+    position:relative;
+    text-align: center;
+    flex-flow: wrap;
+}
+section{
+    margin: 3em 10%;
+}
+section div{
+    margin: 3em auto;
+}
+#dct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#dct p{
+    width: 48%;
+}
+#dct img{
+    width: 22em;
+    height: 22em;
+    margin: auto 0;
+}
+#gra109 img{
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+}
+h2{
+    width: 90%;
+    margin: 2em auto;
+}
+#about_gra p{
+    width: 90%;
+    margin: 2em auto;
+}
+#gra109 p{
+    width: 90%;
+    margin: 2em auto;
+}
+@media only screen and (max-width: 375px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner img {
+        height: auto;
+        width: 100%;
+    }
+
+    h2{
+        margin: 1em auto;
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    #dct{
+        flex-direction: column;
+    }
+    #dct p{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #dct img{
+        width: 90%;
+        height:auto;
+        margin-top: 2em;
+    }
+}

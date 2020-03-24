@@ -1,0 +1,284 @@
+.banner {
+    height: 80vh;
+    width: 100vw;
+    background-color: #0a0607;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner img {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 80vh;
+    max-height: 80vh;
+}
+
+section {
+    margin: 3em 10%;
+    position: relative;
+}
+
+.block {
+    margin: 3em auto;
+}
+
+.data {
+    margin: 3em auto;
+}
+
+.logo_flex {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.logo_flex img {
+    height: 10em;
+    width: 10em;
+    border: black 1px solid;
+}
+
+.esc_about_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.esc_about_flex p{
+    margin: auto 0;
+}
+
+.esc_about {
+    padding: 2em 10%;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3em auto;
+}
+
+.mid_swiper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.swiper-nav {
+    display: flex;
+    align-self: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    height: 2.5em;
+    align-self: center;
+    width: 100%;
+}
+
+.swiper-slide {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.mid_swiper-button-prev,
+.mid_swiper-button-next {
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 3;
+    margin: auto 0;
+}
+
+.team_img {
+    /* border: black 1px solid; */
+    height: 15em;
+    width: 15em;
+}
+
+.data_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.data_text_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container {
+    max-width: 100%;
+    margin: 3em auto;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.step-indicator {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.step-indicator .step-icon {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background: white;
+    border: #4E9156 5px solid;
+    text-align: center;
+    position: relative;
+}
+
+.step.active .step-icon {
+    background: white;
+    border: #4E9156 5px solid;
+    width: 1em;
+    height: 1em;
+}
+
+.step p {
+    text-align: center;
+    position: absolute;
+    bottom: -6em;
+    width: 8em;
+    height: 3.5em;
+    color: #4E9156;
+}
+
+.step .step_p {
+    bottom: 2em;
+    color: black;
+}
+
+.step.active p {
+    color: #4E9156;
+}
+
+.step.step2 p,
+.step.step3 p {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator-line {
+    width: 100%;
+    height: 8px;
+    background: #c2c2c2;
+    flex: 1;
+}
+
+.indicator-line.active {
+    background: #4E9156;
+    height: 8px;
+}
+
+#icon01 {
+    width: 30%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+#slide_down {
+    z-index: 2;
+    color: #4E9156;
+    font-size: 4em;
+    animation: TestMove 2s infinite;
+    -moz-animation: TestMove 2s infinite;
+    -webkit-animation: TestMove 2s infinite;
+}
+
+#a_tag {
+    cursor: pointer;
+}
+
+@keyframes TestMove {
+    from {
+        margin: -0.75em auto 1.25em auto;
+        opacity: 0.25;
+    }
+
+    to {
+        margin: 0em auto 0.5em auto;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes TestMove {
+    from {
+        margin: -0.75em auto 1.25em auto;
+        opacity: 0.25;
+    }
+
+    to {
+        margin: 0em auto 0.5em auto;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes TestMove {
+    from {
+        margin: -0.75em auto 1.25em auto;
+        opacity: 0.25;
+    }
+
+    to {
+        margin: 0em auto 0.5em auto;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner img {
+        height: auto;
+        width: 100%;
+    }
+
+    .esc_about_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon01 {
+        width: 100%;
+    }
+
+    #dates {
+        display: none;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    .data_flex {
+        flex-direction: column;
+    }
+}

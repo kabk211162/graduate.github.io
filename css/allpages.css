@@ -13,7 +13,6 @@
 nav{
     display: flex;
     position: fixed;
-    height: 10vh;
     width: 100vw;
     background-color: #0a0607;
     flex-direction: row;
@@ -21,7 +20,7 @@ nav{
     justify-content: space-between;
 }
 nav a{
-    height: inherit;
+    height: 10vh;
 }
 #ico{
     position: relative;
@@ -81,4 +80,35 @@ footer{
 #FBdct:hover{
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 17em;
+        flex-wrap: unset;
+    }
+    .foot{
+        width:100%;
+        margin-top: 1em;
+    }
+    .foot p {
+        margin: 1em 0em;
+    }
+    nav ol{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        justify-content: center;
+        z-index: 5;
+    }
+    nav ol a{
+        width: 5em;
+    }
+    .menu_div{
+        height: 10vh;
+        margin: 0 2em;
+    }
 }

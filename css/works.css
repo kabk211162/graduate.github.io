@@ -1,0 +1,52 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+}
+section{
+    margin: 3em 10%;
+}
+.works{
+    width: 30%;
+    height: fit-content;
+    margin-top: 3em;
+}
+.team_img{
+    height:14em;
+    width: 14em;
+}
+.team_a{
+    margin: 0 auto;
+    width: fit-content;
+}
+.team_a a{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.team_a h4{
+    width: 100%;
+    text-align: center;
+    margin: 0.5em auto;
+}
+.team_a h6{
+    width: 100%;
+    text-align: center;
+}
+.works_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 375px) {
+    .works_flex{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+    .works{
+        width: 100%;
+    }
+}

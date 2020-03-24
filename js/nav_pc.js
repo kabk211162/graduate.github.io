@@ -1,7 +1,27 @@
+var count = 0;
+var aaa = $("nav").height();
+var bbb = $("").height();
 
 $(document).ready(function () {
     $("#menu").click(function () {
-        $('ol').toggle('drop', { direction: 'up' }, 1000);
+        if ($(window).width() <= 375) {
+            //執行項目
+            $('#ico').animate({ 'opacity': '1' }, 500);
+            $('ol').toggle('drop', { direction: 'up' }, 300);
+            
+            if (count == 0) {
+                $("nav").animate({height:"100vh"},1000);
+                // $("nav").attr('style','height:100vh');
+                count++;
+            }else{
+                $("nav").animate({height:"10vh"},300);
+                count--;
+            }
+        }
+        else {
+            //執行項目
+            $('ol').toggle('drop', { direction: 'up' }, 1000);
+        }
     });
 });
 

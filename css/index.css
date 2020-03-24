@@ -1,0 +1,96 @@
+body{
+    position: relative;
+    padding: auto 80%;
+    height: 100%;
+    background:#0a0607 url("icon01.jpg") center center fixed no-repeat;
+    background-size: 60% 100%;
+}
+.cont{
+    position: relative;
+    border: 2px #ffffff solid;
+    border-radius: 1px;
+    margin: 2.5vh auto 2.5vh auto;
+    width: 95%;
+    height: 95vh;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn a:hover{
+    text-decoration: none;
+}
+.btn{
+    height: 1.5em;
+    width: 5em;
+    text-align: center;
+    font-size: 3em;
+    /* margin: 20% auto 0 auto; */
+    border: #ffffff 3px solid;
+    border-radius: 3em;
+    padding: 0.5em;
+    margin-top: 25%;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+#shing_chu{
+    margin-top: 40%;
+}
+#taipei{
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 375px) {
+    .cont {
+        position: relative;
+        border: 2px #ffffff solid;
+        border-radius: 1px;
+        margin: 2.5vh auto 2.5vh auto;
+        width: 95%;
+        height: 95vh;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .btn {
+        height: 5em;
+        width: 7.5em;
+        text-align: center;
+        font-size: 1.75em;
+        margin: 10% auto;
+        border: #ffffff 3px solid;
+        border-radius: 1em;
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin-top: 5%; */
+    }
+
+    .btn a{
+        margin: auto;
+    }
+
+    #shing_chu {
+        margin-top: 10%;
+    }
+
+    #taipei {
+        margin-top: 10%;
+    }
+
+    .container{
+        width: 15em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+}

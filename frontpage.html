@@ -13,268 +13,16 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" type="text/css" href="css/frontpage.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <style>
-        .banner {
-            height: 80vh;
-            width: 100vw;
-            background-color: #0a0607;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .banner img {
-            height: 100%;
-            margin: 0 auto;
-            position: relative;
-            max-width: 80vh;
-            max-height: 80vh;
-        }
-
-        section {
-            margin: 3em 10%;
-            position: relative;
-        }
-
-        .block {
-            margin: 3em auto;
-        }
-
-        .data {
-            margin: 3em auto;
-        }
-
-        .logo_flex {
-            display: flex;
-            flex-direction: row;
-            flex-flow: wrap;
-            justify-content: space-around;
-        }
-
-        .logo_flex img {
-            height: 10em;
-            width: 10em;
-            border: black 1px solid;
-        }
-
-        .esc_about {
-            padding: 2em 10%;
-        }
-
-        .slider-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 3em auto;
-        }
-
-        .mid_swiper-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            position: relative;
-            overflow-x: hidden;
-            margin: 0;
-        }
-
-        .swiper-nav {
-            display: flex;
-            align-self: baseline;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 0;
-            height: 2.5em;
-            align-self: center;
-            width: 100%;
-        }
-
-        .swiper-slide {
-            width: fit-content;
-            display: flex;
-            justify-content: center;
-        }
-
-        .mid_swiper-button-prev,
-        .mid_swiper-button-next {
-            font-size: 2em;
-            cursor: pointer;
-            z-index: 3;
-            margin: auto 0;
-        }
-
-        .team_img {
-            /* border: black 1px solid; */
-            height: 15em;
-            width: 15em;
-        }
-
-        .data_flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .data_text_flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        .container {
-            max-width: 100%;
-            margin: 3em auto;
-            height: 15em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .step-indicator {
-            display: flex;
-            align-items: center;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-            z-index: 1;
-        }
-
-        .step-indicator .step-icon {
-            height: 1em;
-            width: 1em;
-            border-radius: 50%;
-            background: white;
-            border: #4E9156 5px solid;
-            text-align: center;
-            position: relative;
-        }
-
-        .step.active .step-icon {
-            background: white;
-            border: #4E9156 5px solid;
-            width: 1em;
-            height: 1em;
-        }
-
-        .step p {
-            text-align: center;
-            position: absolute;
-            bottom: -6em;
-            width: 8em;
-            height: 3.5em;
-            color: #4E9156;
-        }
-
-        .step .step_p {
-            bottom: 2em;
-            color: black;
-        }
-
-        .step.active p {
-            color: #4E9156;
-        }
-
-        .step.step2 p,
-        .step.step3 p {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .indicator-line {
-            width: 100%;
-            height: 8px;
-            background: #c2c2c2;
-            flex: 1;
-        }
-
-        .indicator-line.active {
-            background: #4E9156;
-            height: 8px;
-        }
-
-        #icon01 {
-            width: 30%;
-            display: flex;
-            margin: 0 auto;
-        }
-
-        .arrow {
-            display: flex;
-            justify-content: center;
-        }
-
-        #slide_down {
-            z-index: 2;
-            color: #4E9156;
-            font-size: 4em;
-            animation: TestMove 2s infinite;
-            -moz-animation: TestMove 2s infinite;
-            -webkit-animation: TestMove 2s infinite;
-        }
-
-        #a_tag {
-            cursor: pointer;
-        }
-
-        @keyframes TestMove {
-            from {
-                margin: -0.75em auto 1.25em auto;
-                opacity: 0.25;
-            }
-
-            to {
-                margin: 0em auto 0.5em auto;
-                opacity: 1;
-            }
-        }
-
-        @-moz-keyframes TestMove {
-            from {
-                margin: -0.75em auto 1.25em auto;
-                opacity: 0.25;
-            }
-
-            to {
-                margin: 0em auto 0.5em auto;
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes TestMove {
-            from {
-                margin: -0.75em auto 1.25em auto;
-                opacity: 0.25;
-            }
-
-            to {
-                margin: 0em auto 0.5em auto;
-                opacity: 1;
-            }
-        }
-
-        @media screen and (max-width: 500px) {
-            .step p {
-                font-size: 11px;
-                bottom: -20px;
-            }
-        }
-    </style>
-
-
 </head>
 
 <body>
-    <nav>
+    <nav style="height: 10vh;">
         <a href="frontpage.html"><img id="ico" style="opacity: 0;"
                 src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
         <ol style="display: none;">
@@ -296,8 +44,7 @@
 
     <div class="keep"></div>
     <div class="banner">
-        <img
-            src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+        <img src="icon01.jpg">
     </div>
     <a id="a_tag" title="向下滑動" onclick="downTo();">
         <div class="arrow"><i class="fas fa-chevron-down" id="slide_down"></i></div>
@@ -306,15 +53,17 @@
     <section id="section">
         <div id="about_esc" class="block">
             <h2>關於逃生計畫</h2>
-            <p class="esc_about">
-                「逃生計劃」，期許我們逃脫日常生活的枷鎖，提供一個能讓參展組別無後顧之憂地盡情發想、創作以及實踐的場域。在畢業成果展中，每個人都是最獨一無二且璀璨的焦點。
-                <br>
-                <br>Logo的設計，「逃生計畫」字樣採用了手寫字體，藉以表達每個人都是獨一無二的，就像手寫字一樣有自己獨特的風格。中間的圓洞則是一個山洞的出口，象徵著我們逃生計畫的終點。
-                <br>
-                <br>這四年裡，我們到底過著怎麼樣的生活？想要模擬哪位大師的人生，最終只落得迎合社會口味的結果。
-                <br>就這一次，跟著我逃離世界的枷鎖。而你，願不願意和我一起參與這個計劃？
-            </p>
-            <img id="icon01" src="icon01.jpg">
+            <div class="esc_about_flex">
+                <img id="icon01" src="icon01.jpg">
+                <p class="esc_about">
+                    「逃生計劃」，期許我們逃脫日常生活的枷鎖，提供一個能讓參展組別無後顧之憂地盡情發想、創作以及實踐的場域。在畢業成果展中，每個人都是最獨一無二且璀璨的焦點。
+                    <br>
+                    <br>Logo的設計，「逃生計畫」字樣採用了手寫字體，藉以表達每個人都是獨一無二的，就像手寫字一樣有自己獨特的風格。中間的圓洞則是一個山洞的出口，象徵著我們逃生計畫的終點。
+                    <br>
+                    <br>這四年裡，我們到底過著怎麼樣的生活？想要模擬哪位大師的人生，最終只落得迎合社會口味的結果。
+                    <br>就這一次，跟著我逃離世界的枷鎖。而你，願不願意和我一起參與這個計劃？
+                </p>
+            </div>
         </div>
 
         <div class="block">
@@ -366,7 +115,7 @@
 
         </div>
 
-        <div class="block">
+        <div class="block" id="dates">
             <h2>畢展活動</h2>
             <div class="container">
                 <div class="step-indicator">
@@ -397,16 +146,8 @@
                     <div class="step step3">
                         <div class="step-icon"></div>
                         <p class="step_p">
-                            109/05/13
-                            <br>新竹展
-                        </p>
-                    </div>
-                    <div class="indicator-line"></div>
-                    <div class="step step3">
-                        <div class="step-icon"></div>
-                        <p class="step_p">
-                            109/05/29-109/06/01
-                            <br>臺北展
+                            109/06/08-109/06/12
+                            <br>P.M. 8:00線上展
                         </p>
                     </div>
                     <div class="indicator-line"></div>
@@ -433,7 +174,7 @@
                 <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.699479927855!2d121.5007517624031!3d25.0368554580512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9a8d017b6dd%3A0xff3361bbadd40fe9!2z5Ymd55qu5a-u5q235Y-y6KGX5Y2A!5e0!3m2!1szh-TW!2stw!4v1582496847199!5m2!1szh-TW!2stw"
-                        width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
+                        width="600" height="450" frameborder="0" allowfullscreen="" id="map"></iframe>
                 </div>
             </div>
         </div>
@@ -483,6 +224,7 @@
                 575: {
                     slidesPerView: 1,
                     spaceBetween: 10,
+                    slidesPerGroup: 1,
                 },
             }
         });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,100 +13,52 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">   
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <style>
-        .banner{
-            height: 80vh;
-            width: 100vw;
-            background-color: #0a0607;
-            position: relative;
-            display:flex;
-        }
-        .banner img{
-            height: inherit;
-            margin: 0 auto;
-            position:relative;
-            text-align: center;
-            flex-flow: wrap;
-        }
-        section{
-            margin: 3em 10%;
-        }
-        section div{
-            margin: 3em auto;
-        }
-        #dct{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        #dct p{
-            width: 48%;
-        }
-        #dct img{
-            width: 22em;
-            height: 22em;
-            margin: auto 0;
-        }
-        #gra109 img{
-            display: flex;
-            width: 90%;
-            margin: 1em auto;
-        }
-        h2{
-            width: 90%;
-            margin: 2em auto;
-        }
-        #about_gra p{
-            width: 90%;
-            margin: 2em auto;
-        }
-        #gra109 p{
-            width: 90%;
-            margin: 2em auto;
-        }
-    </style>
 </head>
+
 <body>
-        <nav>
-                <a href="frontpage.html"><img id="ico"
-                        src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-                <ol style="display: none;">
-                    <a href="frontpage.html">
-                        <li>首頁</li>
-                    </a>
-                    <a href="works.html">
-                        <li>作品介紹</li>
-                    </a>
-                    <a href="about.html">
-                        <li>關於我們</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>聯絡我們</li>
-                    </a>
-                </ol>
-                <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
-            </nav>
+    <nav>
+        <a href="frontpage.html"><img id="ico"
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+    </nav>
 
     <div class="keep"></div>
-        <div class="banner">
-            <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
-        </div>
+    <div class="banner">
+        <img
+            src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+    </div>
 
     <section>
         <div>
             <h2>關於交大傳播與科技學系</h2>
             <div id="dct">
                 <p>
-                    國立交通大學傳播與科技學系以傳播專業知識和技能為基底，著重創新傳播科技的原理、運用與分析，終極目標為培養傳播領域的頂尖工作者與領導者。我們是全國唯一的傳播與科技學系，跟國內外傳播科系相較，除了傳播專業所強調的整合性、跨學門、多技能學習，本系更獨樹一幟地開創嶄新的傳播專業主軸－－傳播科技。「以傳播科技為主軸的傳播專業訓練」正是本系奠基與發展的核心理念。 
+                    國立交通大學傳播與科技學系以傳播專業知識和技能為基底，著重創新傳播科技的原理、運用與分析，終極目標為培養傳播領域的頂尖工作者與領導者。我們是全國唯一的傳播與科技學系，跟國內外傳播科系相較，除了傳播專業所強調的整合性、跨學門、多技能學習，本系更獨樹一幟地開創嶄新的傳播專業主軸－－傳播科技。「以傳播科技為主軸的傳播專業訓練」正是本系奠基與發展的核心理念。
                     <br>
                     <br>為了實踐上述核心理念，我們擁有傑出優秀的師資、獨立完整的系館空間、先進豐富的教學與研究設備，以及與傳播實務界的密切聯繫。本系所有課程均以當前傳播問題為導向，兼顧理論、方法與實用面向，教學方式嚴謹而活潑。我們堅持小班架構與低生師比，以提昇教學品質和學習效果，師生互動也非常密切。我們致力讓傳科系不僅成為一個卓越的教育與研究機構，也是一個探索傳播知識宇宙的團隊，以及開心學習與共同成長的大家庭。
                 </p>
-                <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c38.37.397.397a/p480x480/60984541_454789935095573_7624277552739123200_o.jpg?_nc_cat=104&_nc_sid=dbb9e7&_nc_ohc=CwJs1V16iEoAX-eDj-l&_nc_ht=scontent.ftpe7-2.fna&oh=a1bbc4261f1be3544b7b18e476645476&oe=5E95FF6D">
+                <img
+                    src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c38.37.397.397a/p480x480/60984541_454789935095573_7624277552739123200_o.jpg?_nc_cat=104&_nc_sid=dbb9e7&_nc_ohc=CwJs1V16iEoAX-eDj-l&_nc_ht=scontent.ftpe7-2.fna&oh=a1bbc4261f1be3544b7b18e476645476&oe=5E95FF6D">
             </div>
         </div>
         <div id="about_gra">
@@ -117,29 +70,31 @@
         </div>
         <div id="gra109">
             <h2>關於109級畢業生</h2>
+            <img
+                src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/73541643_2149503875350577_1256890366351638528_o.jpg?_nc_cat=110&_nc_sid=8024bb&_nc_ohc=xJOKj-_tGtcAX97YrM5&_nc_ht=scontent.ftpe7-1.fna&oh=5a9ea9e7b45845a8c5014c7e0b16f3a8&oe=5E90C730">
             <p>
                 本屆畢業成果展由交大傳科系109級的39名同學製作、展覽。109級同學們從108年6月開始尋找指導老師、嘗試適合自己的作品主題，努力將自己於傳科系四年所學，放入本次展覽作品中。
                 <br>
                 <br>本次展覽共有10組同學推出作品展覽，另設有一組策展組負責本次展覽宣傳及展場規劃。10組作品中，有整合行銷企劃、影片拍攝剪輯以及論文研究等不同面向的主題，探索社會上不同族群不同的議題，期望能透過大學生涯中最後的作品，一同完成我們的《逃生計劃》。
             </p>
-            <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/73541643_2149503875350577_1256890366351638528_o.jpg?_nc_cat=110&_nc_sid=8024bb&_nc_ohc=xJOKj-_tGtcAX97YrM5&_nc_ht=scontent.ftpe7-1.fna&oh=5a9ea9e7b45845a8c5014c7e0b16f3a8&oe=5E90C730">
         </div>
     </section>
     <footer>
-            <div class="foot">
-                <h4>贊助商資訊</h4>
-                <p>持續商業洽談中...</p>
-            </div>
-            <div class="foot">
-                <h4>聯絡我們</h4>
-                <p>
-                    總召：何浚捷
-                    <br>電話：0917811449
-                    <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
-                </p>
-            </div>
+        <div class="foot">
+            <h4>贊助商資訊</h4>
+            <p>持續商業洽談中...</p>
+        </div>
+        <div class="foot">
+            <h4>聯絡我們</h4>
+            <p>
+                總召：何浚捷
+                <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
+            </p>
+        </div>
     </footer>
 
     <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
+
 </html>

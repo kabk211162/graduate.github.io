@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,119 +13,65 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <style>
-        section{
-            margin: 1em 15%;
-        }
-        .border_keep{
-            border: black 3px solid;
-            padding: 2em 10%;
-            margin: 1em auto;
-        }
-        .infor{
-            width: 45%;
-        }
-        .infor_flex{
-            display: flex;
-            flex-direction: flow;
-            justify-content: space-between;
-        }
-        .input_style{
-            border: black 1px solid;
-            height: 2em;
-            width: 100%;
-            border-radius: 0.5em;
-        }
-        .contact_flex{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .cont_btn{
-            height: 3em;
-            width: 12em;
-            background-color: #4E9156;
-            margin: 0 auto;
-            border-radius: 0.5em;
-            color: white;
-            border: none;
-        }
-        .content{
-            width: 100%;
-            height: 10em;
-            border: black 1px solid;
-            border-radius: 0.5em;
-        }
-        .btn_div{
-            height: 4em;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: none;
-        }
-        .gap{
-            margin: 1.5em 0;
-        }
-    </style>
 </head>
+
 <body>
-        <nav>
-                <a href="frontpage.html"><img id="ico"
-                        src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
-                <ol style="display: none;">
-                    <a href="frontpage.html">
-                        <li>首頁</li>
-                    </a>
-                    <a href="works.html">
-                        <li>作品介紹</li>
-                    </a>
-                    <a href="about.html">
-                        <li>關於我們</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>聯絡我們</li>
-                    </a>
-                </ol>
-                <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
-            </nav>
+    <nav>
+        <a href="frontpage.html"><img id="ico"
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+    </nav>
     <div class="keep"></div>
     <section>
-        <h2>聯絡我們</h2>
-        <div class="border_keep">
-            <div class="contact_flex">
-                <div class="gap">
-                    <div class="infor_flex">
-                        <div class="infor">
-                            <h4>您的名字</h4>
-                            <input class="input_style">
-                        </div>
-                        <div class="infor">
-                            <h4>您的信箱</h4>
-                            <input class="input_style">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="this.onload=function(){window.location='frontpage.html'}"></iframe>
+        <form id="mG61Hd" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdF7Kv2bsT1VGVfj2fGc-bqqZl2_m17YvR5VgnUhFfZWn_qMw/formResponse" method="POST" target="hidden_iframe">
+            <h2>聯絡我們</h2>
+            <div class="border_keep">
+                <div class="contact_flex">
+                    <div class="gap">
+                        <div class="infor_flex">
+                            <div class="infor">
+                                <h4>您的名字</h4>
+                                <input class="input_style" name="entry.745004456">
+                            </div>
+                            <div class="infor">
+                                <h4>您的信箱</h4>
+                                <input class="input_style" name="entry.2093647686">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="gap">
-                    <h4>主旨</h4>
-                    <input class="input_style">
-                </div>
-                <div class="gap">
-                    <h4>內容</h4>
-                    <textarea class="content"></textarea>
-                </div>
-                <div class="gap">
-                    <div class="btn_div">
-                        <input class="cont_btn" type="button" value="確定送出">
+                    <div class="gap">
+                        <h4>主旨</h4>
+                        <input class="input_style" name="entry.463807492">
                     </div>
+                    <div class="gap">
+                        <h4>內容</h4>
+                        <textarea class="content" name="entry.1345980109" ></textarea>
+                    </div>
+                    <button type="submit" class="button" id="button" onclick="window.alert('感謝您寶貴的意見，我們會盡快回復您!');">確認送出</button>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
     <footer>
         <div class="foot">
@@ -134,13 +81,14 @@
         <div class="foot">
             <h4>聯絡我們</h4>
             <p>
-                    總召：何浚捷
-                    <br>電話：0917811449
-                    <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
-                </p>
+                總召：何浚捷
+                <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow">交大傳科系畢業成果展</a>
+            </p>
         </div>
     </footer>
 
     <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
+
 </html>
