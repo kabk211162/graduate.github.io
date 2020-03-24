@@ -101,6 +101,11 @@ i{
 }
 
 @media only screen and (max-width: 375px) {
+    /* section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } */
     .header_flex{
         flex-direction: column;
     }
@@ -109,7 +114,8 @@ i{
         height: auto;
     }
     .team{
-        margin: 1em 0;
+        margin: 0.5em 0;
+        font-size: 1.5em;
     }
     .intro_flex{
         height: 12em;
@@ -133,5 +139,9 @@ i{
     }
     .link_flex{
         flex-direction: column;
+    }
+
+    .header{
+        margin: 2em 0;
     }
 }

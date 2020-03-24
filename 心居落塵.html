@@ -24,11 +24,21 @@
         .intro_flex p {
             width: 32em;
         }
+
+        @media only screen and (max-width: 375px) {
+            .intro_flex p {
+                width: 100%;
+            }
+
+            .border_flex {
+                margin: 3em 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav>
+    <nav style="height: 10vh;">
         <a href="frontpage.html"><img id="ico"
                 src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
         <ol style="display: none;">
@@ -102,8 +112,11 @@
             <h2>相關連結</h2>
             <div class="link_flex">
                 <div class="fan_page">
-                    <a href="https://www.facebook.com/thehouses2020/" target="_blank"><i class="fab fa-facebook-square" id="fb"></i></a>
-                    <a href="https://www.facebook.com/thehouses2020/" target="_blank"><h6>心居落塵 The Houses</h6></a>
+                    <a href="https://www.facebook.com/thehouses2020/" target="_blank"><i class="fab fa-facebook-square"
+                            id="fb"></i></a>
+                    <a href="https://www.facebook.com/thehouses2020/" target="_blank">
+                        <h6>心居落塵 The Houses</h6>
+                    </a>
                 </div>
                 <!-- <div>
                     <a href="https://www.instagram.com/feelings_dept/"><i class="fab fa-instagram" id="ig"></i></a>
