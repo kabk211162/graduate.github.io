@@ -116,6 +116,7 @@ i{
     .team{
         margin: 0.5em 0;
         font-size: 1.5em;
+        height: auto;
     }
     .intro_flex{
         height: 12em;
@@ -143,5 +144,9 @@ i{
 
     .header{
         margin: 2em 0;
+    }
+
+    h2{
+        font-size: 1.5em;
     }
 }
