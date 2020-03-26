@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="msapplication-TileImage" content="https://kabk211162.github.io/favicon.ico">
-    <title>視覺聯絡區-逃生計畫</title>
+    <title>畢展籌辦組-逃生計畫</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
@@ -20,35 +20,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <style>
-        .flex_our_work{
+        .flex_our_work {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             margin: 2em auto;
         }
-        .our_work{
-            width: 27%;
-            height: 27em;
+
+        .our_work {
             border: black 3px solid;
             border-radius: 12px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
-        .our_work img{
+
+        .our_work img {
             width: 90%;
             margin: 0 auto;
         }
-        .our_work h4{
+
+        .our_work h4 {
             margin: 0 auto;
             font-weight: bolder;
         }
-        @media only screen and (max-width: 375px){
-            .flex_our_work{
+
+        .flex_our_work {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .fb_link {
+            color: black;
+            display: flex;
+            margin-top: 3em;
+            width: 27%;
+            height: 27em;
+        }
+
+        .fb_link:hover {
+            color: black;
+        }
+
+        @media only screen and (max-width: 375px) {
+            .flex_our_work {
                 flex-direction: column;
             }
-            .our_work{
-                width:100%;
+
+            .our_work {
+                width: 100%;
                 margin: 1em 0;
             }
         }
@@ -126,7 +146,7 @@
                     <div class="mem">
                         <h4>黃俊軒</h4>
                         <p>視覺 粉專</p>
-                        <img class="mem_img">
+                        <img class="mem_img" src="face/IMG_0783.JPG">
                         <p>
 
                         </p>
@@ -146,14 +166,28 @@
         <div>
             <h2 class="h2_h2">活動項目</h2>
             <div class="flex_our_work">
-                <div class="our_work">
-                    <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
-                    <h4>逃生電話亭</h4>
-                </div>
-                <div class="our_work">
-                    <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
-                    <h4>拍攝大頭貼</h4>
-                </div>
+                <a href="https://www.facebook.com/CTGradShow/posts/2433379186788911" class="fb_link" target="_blank">
+                    <div class="our_work">
+                        <img
+                            src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
+                        <h4>逃生電話亭</h4>
+                        <p>
+                            2019/12/16-
+                            <br>2019/12/27
+                        </p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/CTGradShow/posts/2594673893992772" class="fb_link" target="_blank">
+                    <div class="our_work">
+                        <img
+                            src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
+                        <h4>拍攝大頭貼</h4>
+                        <p>
+                            2020/03/02-
+                            <br>2020/03/04
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
