@@ -4,7 +4,7 @@ var bbb = $("").height();
 
 $(document).ready(function () {
     $("#menu").click(function () {
-        if ($(window).width() <= 375) {
+        if ($(window).width() <= 575) {
             //執行項目
             $('#ico').animate({ 'opacity': '1' }, 500);
             $('ol').toggle('drop', { direction: 'up' }, 300);

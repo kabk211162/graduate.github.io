@@ -13,6 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
     <link rel="stylesheet" type="text/css" href="css/groups.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/frontpage.css"> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,11 +21,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <style>
-        .flex_our_work {
+        .block h2{
+            margin-bottom: 2em;
+        }
+
+        .slider-container {
+            display: flex;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .mid_swiper-container {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 2em auto;
+            position: relative;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .mid_swiper-button-prev,
+        .mid_swiper-button-next {
+            font-size: 2em;
+            cursor: pointer;
+            z-index: 3;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
         }
 
         .our_work {
@@ -33,45 +56,52 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            height:35em;
         }
 
-        .our_work img {
+        .photo_img_vedio {
             width: 90%;
-            margin: 0 auto;
+            margin: 2em auto;
         }
 
         .our_work h4 {
-            margin: 0 auto;
+            margin: 1em auto;
             font-weight: bolder;
         }
 
-        .flex_our_work {
-            margin: 0 auto;
-            text-align: center;
+        .our_work p {
+            margin: 0.5em auto;
+        }
+
+        .swiper-slide {
+            width: 27%;
         }
 
         .fb_link {
             color: black;
             display: flex;
-            margin-top: 3em;
-            width: 27%;
-            height: 27em;
+
         }
 
         .fb_link:hover {
             color: black;
         }
 
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 575px) {
+            .swiper-slide {
+                width: 100%;
+            }
+
             .flex_our_work {
                 flex-direction: column;
             }
 
-            .our_work {
-                width: 100%;
-                margin: 1em 0;
+            .mid_swiper-button-prev,
+            .mid_swiper-button-next {
+                font-size: 1em;
             }
         }
+    </style>
     </style>
 </head>
 
@@ -163,39 +193,128 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h2 class="h2_h2">活動項目</h2>
-            <div class="flex_our_work">
-                <a href="https://www.facebook.com/CTGradShow/posts/2433379186788911" class="fb_link" target="_blank">
-                    <div class="our_work">
-                        <img
-                            src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
-                        <h4>逃生電話亭</h4>
-                        <p>
-                            2019/12/16-
-                            <br>2019/12/27
-                        </p>
+        <div class="block">
+            <h2>活動項目</h2>
+            <div class="slider-container">
+                <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="mid_swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2433379186788911" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
+                                    <h4>逃生電話亭</h4>
+                                    <p>
+                                        2019/12/16-
+                                        <br>2019/12/27
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/2285174075109413/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.13418-10/s851x315/74624663_174752676925381_3184341766035734528_n.jpg?_nc_cat=111&_nc_sid=08861d&_nc_ohc=Bs7cejl2v7YAX_8HE-U&_nc_ht=scontent-tpe1-1.xx&_nc_tp=7&oh=090a30ac17c2679c9822d2815ce5864e&oe=5EA53F64">
+                                    <h4>新年街訪企劃 <br>feat. 街訪喀</h4>
+                                    <p>
+                                        2020/01/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2531545356972293" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/83412200_2531544520305710_6869493988848566272_o.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_ohc=YHWCxJ6dshsAX-N8hjH&_nc_ht=scontent-tpe1-1.xx&oh=539f1048b2270a003a316a94c24121d7&oe=5EA2A960">
+                                    <h4>傳科螢宣傳</h4>
+                                    <p>
+                                        2020/02/02
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/3645725958833901/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/82839030_3645736645499499_7509553663388418048_n.jpg?_nc_cat=103&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=zvZx8S6KDsIAX8YpX5_&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=ce08a71990b0974d5c62fe0adfd363bd&oe=5EA49D90">
+                                    <h4>一日MODEL</h4>
+                                    <p>
+                                        2020/02/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2594673893992772" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
+                                    <h4>拍攝大頭貼</h4>
+                                    <p>
+                                        2020/03/02-
+                                        <br>2020/03/04
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/660955828059963/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/77200066_660957151393164_4882020133440061440_n.jpg?_nc_cat=105&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=itVzn3Cu3XEAX-3ecjn&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=d97466f1c372a2f226dc9bec59e7d199&oe=5EA265AD">
+                                    <h4>一日臨演</h4>
+                                    <p>
+                                        2020/03/09
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/2802807099815606/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/75319058_2802836049812711_5888699483381825536_n.jpg?_nc_cat=103&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=IEbjqQQtq0sAX8Bj5I5&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=07753132b6b6280b96f36f13d1a3e397&oe=5EA44049">
+                                    <h4>一日實況主</h4>
+                                    <p>
+                                        2020/03/18
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/271270713866267/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/73460054_271271820532823_7227769711025455104_n.jpg?_nc_cat=101&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=OzOg4PHkrWEAX9lVh0p&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=8be8cb50b9539cf42d3bdfc96e05c539&oe=5EA57E20">
+                                    <h4>一日送報員</h4>
+                                    <p>
+                                        2020/03/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-                <a href="https://www.facebook.com/CTGradShow/posts/2594673893992772" class="fb_link" target="_blank">
-                    <div class="our_work">
-                        <img
-                            src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
-                        <h4>拍攝大頭貼</h4>
-                        <p>
-                            2020/03/02-
-                            <br>2020/03/04
-                        </p>
-                    </div>
-                </a>
+                </div>
+                <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="foot">
+        <!-- <div class="foot">
             <h4>贊助商資訊</h4>
             <p>持續商業洽談中...</p>
-        </div>
+        </div> -->
         <div class="foot">
             <h4>聯絡我們</h4>
             <p>
@@ -206,6 +325,29 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+
+        // 輪播的swiper
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    slidesPerGroup: 1,
+                },
+            }
+        });
+    </script>
     <script type="text/javascript" src="js/nav_pc.js"></script>
 </body>
 

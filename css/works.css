@@ -41,7 +41,7 @@ section{
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 575px) {
     .works_flex{
         flex-direction: column;
         flex-wrap: unset;

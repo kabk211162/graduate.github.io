@@ -12,34 +12,145 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" type="text/css" href="css/frontpage.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+    <style>
+        .flex_our_work {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 2em auto;
+        }
 
-    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/glitch.css">
+        .our_work {
+            border: black 3px solid;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .our_work img {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .our_work h4 {
+            margin: 0 auto;
+            font-weight: bolder;
+        }
+
+        .flex_our_work {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .swiper-slide{
+            margin-top: 3em;
+            width: 27%;
+            height: 27em;
+        }
+
+        .fb_link {
+            color: black;
+            display: flex;
+            
+        }
+
+        .fb_link:hover {
+            color: black;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .swiper-slide{
+                width: 100%;
+                margin: 1em 0;
+            }
+
+            .flex_our_work {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <form id="mG61Hd"
-        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdF7Kv2bsT1VGVfj2fGc-bqqZl2_m17YvR5VgnUhFfZWn_qMw/formResponse"
-        method="POST" target="_self">
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCTGradShow%2Fvideos%2F271270713866267%2F&show_text=0&width=560"></iframe>
 
-        <h4>您的名字</h4>
-        <input name="entry.745004456">
+    <div class="block">
+        <h2>畢製作品</h2>
+        <div class="slider-container">
+            <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="mid_swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.facebook.com/CTGradShow/posts/2433379186788911" class="fb_link" target="_blank">
+                            <div class="our_work">
+                                <img
+                                    src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
+                                <h4>逃生電話亭</h4>
+                                <p>
+                                    2019/12/16-
+                                    <br>2019/12/27
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.facebook.com/CTGradShow/posts/2594673893992772" class="fb_link" target="_blank">
+                            <div class="our_work">
+                                <img
+                                    src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
+                                <h4>拍攝大頭貼</h4>
+                                <p>
+                                    2020/03/02-
+                                    <br>2020/03/04
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="心居落塵.html" target="_blank"><img class="team_img" src="img/心居落塵logo.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
 
-        <h4>您的信箱</h4>
-        <input name="entry.2093647686">
+    </div>
 
-        <h4>主旨</h4>
-        <input name="entry.463807492">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
 
-        <h4>內容</h4>
-        <textarea name="entry.1345980109"></textarea>
-
-        <button type="submit" class="button" id="buttons">確認送出</button>
-    </form>
+        // 輪播的swiper
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    slidesPerGroup: 1,
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>

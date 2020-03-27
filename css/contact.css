@@ -62,7 +62,7 @@ section {
     margin: 1.5em 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 575px) {
     .border_keep{
         padding: 0.5em 10%;
     }
