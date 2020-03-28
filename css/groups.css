@@ -113,13 +113,16 @@ i{
         width: 100%;
         height: auto;
     }
+    .border_flex{
+        margin: 0 auto;
+    }
     .team{
         margin: 0.5em 0;
         font-size: 1.5em;
         height: auto;
     }
     .intro_flex{
-        height: 12em;
+        height: fit-content;
     }
     .intro_flex p{
         margin: 1em 0;
