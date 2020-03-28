@@ -9,7 +9,7 @@ body {
 
 p {
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 1.5em;
   letter-spacing: 8px;
   font-family: 'Press Start 2P';
@@ -21,6 +21,12 @@ p {
   /*Animation*/
   
   animation: glitch1 2s infinite;
+}
+
+@media only screen and (max-width: 575px) {
+  p{
+    color: white;
+  }
 }
 
 p:nth-child(2) {

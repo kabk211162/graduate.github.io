@@ -116,6 +116,10 @@ section {
     justify-content: space-around;
 }
 
+.data_text_flex p{
+    margin-right: 3em;
+}
+
 .container {
     max-width: 100%;
     margin: 3em auto;
@@ -165,7 +169,7 @@ section {
 }
 
 .step .step_p {
-    bottom: 2em;
+    bottom: 3em;
     color: black;
 }
 
@@ -216,6 +220,15 @@ section {
 
 #a_tag {
     cursor: pointer;
+}
+
+#covid{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border: none;
 }
 
 @keyframes TestMove {

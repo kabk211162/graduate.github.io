@@ -19,6 +19,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162016484-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162016484-1');
+    </script>
+
 </head>
 
 <body>
@@ -43,8 +53,11 @@
     </nav>
     <div class="keep"></div>
     <section>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="this.onload=function(){window.location='frontpage.html'}"></iframe>
-        <form id="mG61Hd" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdF7Kv2bsT1VGVfj2fGc-bqqZl2_m17YvR5VgnUhFfZWn_qMw/formResponse" method="POST" target="hidden_iframe">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
+            onload="this.onload=function(){window.location='frontpage.html'}"></iframe>
+        <form id="mG61Hd"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdF7Kv2bsT1VGVfj2fGc-bqqZl2_m17YvR5VgnUhFfZWn_qMw/formResponse"
+            method="POST" target="hidden_iframe">
             <h2>聯絡我們</h2>
             <div class="border_keep">
                 <div class="contact_flex">
@@ -66,9 +79,10 @@
                     </div>
                     <div class="gap">
                         <h4>內容</h4>
-                        <textarea class="content" name="entry.1345980109" ></textarea>
+                        <textarea class="content" name="entry.1345980109"></textarea>
                     </div>
-                    <button type="submit" class="button" id="button" onclick="window.alert('感謝您寶貴的意見，我們會盡快回復您!');">確認送出</button>
+                    <button type="submit" class="button" id="button"
+                        onclick="window.alert('感謝您寶貴的意見，我們會盡快回復您!');">確認送出</button>
                 </div>
             </div>
         </form>

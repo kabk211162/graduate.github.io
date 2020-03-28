@@ -68,10 +68,11 @@ footer{
 }
 .foot{
     color:white;
-    width: 50%;
+    /* width: 50%; */
+    margin: 0 auto;
 }
 .foot p{
-    margin: 1em 2em;
+    margin: 1em 0;
 }
 #FBdct{
     color:white;
