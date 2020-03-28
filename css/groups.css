@@ -96,7 +96,7 @@ i{
     flex-direction: row;
 }
 .fan_page a{
-    margin: auto 1em;
+    margin: auto 0.5em;
     color: black;
 }
 
