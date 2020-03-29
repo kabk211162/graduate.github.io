@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileImage" content="https://kabk211162.github.io/favicon.ico">
+    <title>畢展籌辦組-逃生計畫</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" type="text/css" href="css/groups.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/frontpage.css"> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162016484-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162016484-1');
+    </script>
+
+
+    <style>
+        .block h2 {
+            margin-bottom: 2em;
+        }
+
+        .slider-container {
+            display: flex;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .mid_swiper-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: relative;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .mid_swiper-button-prev,
+        .mid_swiper-button-next {
+            font-size: 2em;
+            cursor: pointer;
+            z-index: 2;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .our_work {
+            border: black 3px solid;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 35em;
+        }
+
+        .photo_img_vedio {
+            width: 90%;
+            margin: 2em auto;
+        }
+
+        .our_work h4 {
+            margin: 1em auto;
+            font-weight: bolder;
+        }
+
+        .our_work p {
+            margin: 0.5em auto;
+        }
+
+        .swiper-slide {
+            width: 27%;
+        }
+
+        .fb_link {
+            color: black;
+            display: flex;
+
+        }
+
+        .fb_link:hover {
+            color: black;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .swiper-slide {
+                width: 100%;
+            }
+
+            .flex_our_work {
+                flex-direction: column;
+            }
+
+            .mid_swiper-button-prev,
+            .mid_swiper-button-next {
+                font-size: 1em;
+            }
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <nav style="height: 10vh;">
+        <a href="frontpage.html"><img id="ico"
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+    </nav>
+    <div class="keep"></div>
+    <section>
+        <div class="header_flex">
+            <img
+                src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-1/p480x480/79099813_2404170113043152_1148994104907005952_o.jpg?_nc_cat=103&_nc_ohc=MqGsOtU9G6AAX_5mbVB&_nc_ht=scontent.frmq2-2.fna&_nc_tp=6&oh=3890c484a330e1f9a05a480350b03f57&oe=5ED21100">
+            <div class="header">
+                <div class="intro_flex">
+                    <h2 class="team">避仇組</h2>
+                    <p>
+                        逃生，逃往離世界枷鎖的計畫
+                        <br>四年裡，我們努力掙脫這世界的枷鎖
+                        <br>
+                        <br>畢籌，籌辦了逃生計畫
+                        <br>在本次疫情夾擊下做的每一個決策
+                        <br>為了讓同學們無後顧之憂的創作
+                        <br>畢籌，不只是畢籌，更是要避仇
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="border_flex">
+            <div>
+                <h2 class="h2_h2">團隊成員</h2>
+                <div class="mem_flex">
+                    <div class="mem">
+                        <h4>何浚捷</h4>
+                        <p>總召 視覺</p>
+                        <img class="mem_img" src="face/IMG_9105.JPG">
+                        <p>
+                            好想睡覺
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>許柏悅</h4>
+                        <p>行政 公關</p>
+                        <img class="mem_img" src="face/IMG_9140.JPG">
+                        <p>
+                            每個人的人生劇本都寫好了，
+                            <br>只是缺個好導演
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>林芷懷</h4>
+                        <p>執秘 公關</p>
+                        <img class="mem_img" src="face/IMG_9113.JPG">
+                        <p>
+                            珍綠無糖去冰一杯，謝謝
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>黃俊軒</h4>
+                        <p>行銷 影像</p>
+                        <img class="mem_img" src="face/IMG_0783.JPG">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="mem">
+                        <h4>翁邦晏</h4>
+                        <p>總務 場器</p>
+                        <img class="mem_img" src="face/IMG_9124.JPG">
+                        <p>
+                            減肥？不用減肥
+                            <br>是其他人太瘦
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <h2>活動項目</h2>
+            <div class="slider-container">
+                <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="mid_swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2433379186788911" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/79337768_2433376193455877_3567449537419149312_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GQdM9EsTriUAX9ftmxc&_nc_ht=scontent.ftpe7-1.fna&oh=bfd5ee01cfc869ada4a86418cd3b241f&oe=5E9B68F6">
+                                    <h4>逃生電話亭</h4>
+                                    <p>
+                                        2019/12/16-
+                                        <br>2019/12/27
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/2285174075109413/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.13418-10/s851x315/74624663_174752676925381_3184341766035734528_n.jpg?_nc_cat=111&_nc_sid=08861d&_nc_ohc=Bs7cejl2v7YAX_8HE-U&_nc_ht=scontent-tpe1-1.xx&_nc_tp=7&oh=090a30ac17c2679c9822d2815ce5864e&oe=5EA53F64">
+                                    <h4>新年街訪企劃 <br>feat. 街訪喀</h4>
+                                    <p>
+                                        2020/01/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2531545356972293" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/83412200_2531544520305710_6869493988848566272_o.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_ohc=YHWCxJ6dshsAX-N8hjH&_nc_ht=scontent-tpe1-1.xx&oh=539f1048b2270a003a316a94c24121d7&oe=5EA2A960">
+                                    <h4>傳科營宣傳</h4>
+                                    <p>
+                                        2020/02/02
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/3645725958833901/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/82839030_3645736645499499_7509553663388418048_n.jpg?_nc_cat=103&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=zvZx8S6KDsIAX8YpX5_&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=ce08a71990b0974d5c62fe0adfd363bd&oe=5EA49D90">
+                                    <h4>一日MODEL</h4>
+                                    <p>
+                                        2020/02/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/posts/2594673893992772" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/88416892_2594670467326448_3457278214617956352_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=r2ST6RJNTF4AX-4dMx4&_nc_ht=scontent.ftpe7-2.fna&oh=0f29f4444be8a922a4d1564274f49578&oe=5E9D0A2A">
+                                    <h4>拍攝大頭貼</h4>
+                                    <p>
+                                        2020/03/02-
+                                        <br>2020/03/04
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/660955828059963/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/77200066_660957151393164_4882020133440061440_n.jpg?_nc_cat=105&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=itVzn3Cu3XEAX-3ecjn&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=d97466f1c372a2f226dc9bec59e7d199&oe=5EA265AD">
+                                    <h4>一日臨演</h4>
+                                    <p>
+                                        2020/03/09
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/2802807099815606/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/75319058_2802836049812711_5888699483381825536_n.jpg?_nc_cat=103&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=IEbjqQQtq0sAX8Bj5I5&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=07753132b6b6280b96f36f13d1a3e397&oe=5EA44049">
+                                    <h4>一日實況主</h4>
+                                    <p>
+                                        2020/03/18
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.facebook.com/CTGradShow/videos/271270713866267/" class="fb_link"
+                                target="_blank">
+                                <div class="our_work">
+                                    <img class="photo_img_vedio"
+                                        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t15.5256-10/cp0/e15/q65/p960x960/73460054_271271820532823_7227769711025455104_n.jpg?_nc_cat=101&_nc_sid=ad6a45&efg=eyJpIjoidCJ9&_nc_ohc=OzOg4PHkrWEAX9lVh0p&_nc_ht=scontent-tpe1-1.xx&_nc_tp=3&oh=8be8cb50b9539cf42d3bdfc96e05c539&oe=5EA57E20">
+                                    <h4>一日送報員</h4>
+                                    <p>
+                                        2020/03/26
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- <div class="foot">
+            <h4>贊助商資訊</h4>
+            <p>持續商業洽談中...</p>
+        </div> -->
+        <div class="foot">
+            <h4>聯絡我們</h4>
+            <p>
+                總召：何浚捷
+                <br>電話：0917811449
+                <br>臉書粉絲專頁：<a id="FBdct" href="https://m.me/CTGradShow" target="_blank">交大傳科系畢業成果展</a>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+
+        // 輪播的swiper
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    slidesPerGroup: 1,
+                },
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/nav_pc.js"></script>
+</body>
+
+</html>
