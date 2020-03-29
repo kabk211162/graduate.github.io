@@ -50,6 +50,7 @@ section > div > img{
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 1em;
 }
 .intro_flex p{
     text-align: left;
@@ -123,6 +124,7 @@ i{
     }
     .intro_flex{
         height: fit-content;
+        margin-left: 0;
     }
     .intro_flex p{
         margin: 1em 0;
