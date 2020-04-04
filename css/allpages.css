@@ -64,7 +64,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1em 2em 1em 2em;
-    margin: 2em auto;
+    margin: 2em auto 0 auto;
 }
 .foot{
     color:white;
@@ -107,6 +107,7 @@ footer{
     }
     nav ol a{
         width: 5em;
+        margin: 2em 0;
     }
     .menu_div{
         height: 10vh;
