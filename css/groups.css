@@ -34,7 +34,7 @@ section > div > img{
     margin-bottom: 2em;
 }
 .mem p{
-    margin: 2.5em auto;
+    margin: 2.25em auto;
     text-align: center;
 }
 .mem_img{
@@ -42,7 +42,7 @@ section > div > img{
     height: 9em;
     border-radius: 9em;
     /* border: black 1px solid; */
-    margin: 1em auto;
+    margin: 0.75em auto;
     display: flex;
 }
 .intro_flex{
