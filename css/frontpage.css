@@ -102,6 +102,11 @@ section {
     /* border: black 1px solid; */
     height: 15em;
     width: 15em;
+    transition: width 1s, height 1s;
+}
+.team_img:hover{
+    height: 16em;
+    width: 16em;
 }
 
 .data_flex {
