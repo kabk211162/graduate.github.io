@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <title>給同學的一句話</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <span>您的大名：</span><input id="nameValue" type="text">
+        </div>
+        <div>
+            <span>一句話：</span><input id="lecValue" type="text">
+        </div>
+
+        <button>送出</button>
+
+        <div>
+            <span>您的大名：</span><input type="text" class="form-control" id="name">
+        </div>
+        <div>
+            <span>一句話：</span><input type="text" class="form-control" id="lec">
+        </div>
+
+        <button id="send">送出</button>
+
+        <div id="dataView"></div>
+    </div>
+
+    <script>
+
+        $(function () {
+            $('#send').click(function (e) {
+                $.post('https://script.google.com/macros/s/AKfycbyMLO5AcGPwjXbkA5g24WwqkYuR2HTBprB0govUcw9bH8Qzph8/exec', {
+                    name: $('#name').val(),
+                    lec: $('#lec').val()
+                }, function (e) {
+                    console.log(e);
+                    $('#dataView')[0].innerHTML = e;
+                });
+            });
+        });
+        //發送資料
+        let sendButton = document.querySelector('button');
+
+        function send() {
+            let name = document.querySelector('#nameValue').value;
+            let lec = document.querySelector('#lecValue').value;
+
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbyMLO5AcGPwjXbkA5g24WwqkYuR2HTBprB0govUcw9bH8Qzph8/exec",
+                data: {
+                    "name": name,
+                    "lec": lec
+                },
+
+                success: function (response) {
+                    if (response == "成功") {
+                        console.log("成功");
+                    }
+                },
+            });
+        };
+
+        sendButton.addEventListener('click', send);
+
+        const proxyurl = "http://escapeplan.nctu.me";
+        const url = "file:///D:/畢製/for_classmate/for_classmate.html"; // site that doesn’t send Access-Control-*
+        fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+            .then(response => response.text())
+            .then(contents => console.log(contents))
+            .catch(() => console.log("try " + url + " response. Blocked by browser?"))
+    </script>
+</body>
+
+</html>
