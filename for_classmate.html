@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+        body{
+            background-color: #F5DEB3;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .h1_1{
+            margin: 2em auto;
+            width: fit-content;
+
+        }
+        .container{
+            margin: 3em auto;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .container input{
+            font-size: 1.1em;
+            width: 15em;
+            padding: 0.25em;
+            height: 1.25em;
+        }
+        .container button{
+            margin: 2em 0;
+            height: 3em;
+            font-size: 1.25em;
+            border-radius: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            background-color:#FFB366;
+        }
+        .container button:hover{
+            background-color:#FF8033;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        #dataView{
+            border: 3px black solid;
+            border-radius: 1em;
+            background-color: white;
+            padding: 0.5em;
+            width: 20em;
+            margin: 0 auto;
+            display: none;
+        }
+    </style>
+
+    <title>給同學的一句話</title>
+
+</head>
+
+<body>
+    <nav style="height: 10vh;">
+        <a href="frontpage.html"><img id="ico" src="icon01.jpg"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+    </nav>
+    <div class="keep"></div>
+    
+    <h1 class="h1_1">給109大家的小彩蛋</h1>
+
+    <div class="container">
+        <!-- <div>
+            <span>您的大名：</span><input id="nameValue" type="text">
+        </div>
+        <div>
+            <span>一句話：</span><input id="lecValue" type="text">
+        </div>
+
+        <button>送出</button> -->
+
+        <div>
+            <p>你的名字：</p><input type="text" class="form-control" id="name">
+        </div>
+        <div>
+            <p>你的學號：</p><input type="text" class="form-control" id="lec">
+        </div>
+
+        <button id="send">送出</button>
+    </div>
+
+    <div id="dataView"></div>
+
+
+    <script>
+
+        $(function () {
+            $('#send').click(function (e) {
+                //送出資料到後端
+                if($('#name').val() == ''||$('#lec').val() == ''){
+                    alert('請填寫資料');
+                    return;
+                }
+                $.post('https://script.google.com/macros/s/AKfycbyMLO5AcGPwjXbkA5g24WwqkYuR2HTBprB0govUcw9bH8Qzph8/exec', {
+                    name: $('#name').val(),
+                    lec: $('#lec').val()
+                }, function (e) {
+                    console.log(e);
+                    $('#dataView')[0].innerHTML ='<p>To ' + $('#name').val() + '，</p>' + e + '<br><br>';
+                    // $('#dataView').show();
+                    $('#dataView').slideDown(500, 'swing');
+                    $('html, body').animate({ scrollTop:  $('#dataView').offset().top - 50 }, 'slow');
+                });
+                //產生表單
+            });
+        });
+        //發送資料
+        let sendButton = document.querySelector('button');
+
+        function send() {
+            let name = document.querySelector('#nameValue').value;
+            let lec = document.querySelector('#lecValue').value;
+
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbyMLO5AcGPwjXbkA5g24WwqkYuR2HTBprB0govUcw9bH8Qzph8/exec",
+                data: {
+                    "name": name,
+                    "lec": lec
+                },
+
+                success: function (response) {
+                    if (response == "成功") {
+                        console.log("成功");
+                    }
+                },
+            });
+        };
+
+        sendButton.addEventListener('click', send);
+
+        const proxyurl = "http://escapeplan.nctu.me";
+        const url = "file:///D:/畢製/for_classmate/for_classmate.html"; // site that doesn’t send Access-Control-*
+        fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+            .then(response => response.text())
+            .then(contents => console.log(contents))
+            .catch(() => console.log("try " + url + " response. Blocked by browser?"))
+    </script>
+
+    <script type="text/javascript" src="js/nav_pc.js"></script>
+</body>
+
+</html>
