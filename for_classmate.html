@@ -155,7 +155,7 @@
             <p>對我的話：</p><input id="lecValue" type="text">
         </div>
 
-        <button>送出</button>
+        <button id="btn2">送出</button>
     </div>
 
     <script>
@@ -210,7 +210,7 @@
             });
         });
         //發送資料
-        let sendButton = document.querySelector('button');
+        let sendButton = document.querySelector('#btn2');
 
         function send() {
             let name = document.querySelector('#nameValue').value;
