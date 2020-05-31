@@ -149,10 +149,10 @@
 
     <div id="dis">
         <div>
-            <span>您的大名：</span><input id="nameValue" type="text">
+            <p>您的大名：</p><input id="nameValue" type="text">
         </div>
         <div>
-            <span>一句話：</span><input id="lecValue" type="text">
+            <p>一句話：</p><input id="lecValue" type="text">
         </div>
 
         <button>送出</button>
@@ -177,6 +177,7 @@
                     $('#dataView').slideDown(500, 'swing');
                     $('html, body').animate({ scrollTop:  $('#dataView').offset().top - 50 }, 'slow');
                     $('#dis').show();
+                    $('#dis').css('display','flex');
                 });
                 //產生表單
                 // var div_1 = document.createElement("div");
