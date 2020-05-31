@@ -234,7 +234,7 @@
         sendButton.addEventListener('click', send);
 
         const proxyurl = "http://escapeplan.nctu.me";
-        const url = "file:///D:/畢製/for_classmate/for_classmate.html"; // site that doesn’t send Access-Control-*
+        const url = "http://escapeplan.nctu.me/for_classmate.html"; // site that doesn’t send Access-Control-*
         fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
             .then(response => response.text())
             .then(contents => console.log(contents))
