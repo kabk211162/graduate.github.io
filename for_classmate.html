@@ -20,15 +20,22 @@
         }
         .h1_1{
             margin: 2em auto;
+            width: 9em;
             width: fit-content;
 
         }
         .container{
             margin: 3em auto;
+            width: 22em;
             width: fit-content;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+        }
+        .container div{
+            width: 17em;
+            width: fit-content;
+            margin: 0 auto;
         }
         .container input{
             font-size: 1.1em;
@@ -60,6 +67,41 @@
             margin: 0 auto;
             display: none;
         }
+        #dis{
+            margin: 3em auto;
+            width: 22em;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            display: none;
+        }
+        #dis div{
+            width: 17em;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        #dis input{
+            font-size: 1.1em;
+            width: 15em;
+            padding: 0.25em;
+            height: 1.25em;
+        }
+        #dis button{
+            margin: 2em 0;
+            height: 3em;
+            font-size: 1.25em;
+            border-radius: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            background-color:#FFB366;
+        }
+        #dis button:hover{
+            background-color:#FF8033;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
     </style>
 
     <title>給同學的一句話</title>
@@ -90,14 +132,6 @@
     <h1 class="h1_1">給109大家的小彩蛋</h1>
 
     <div class="container">
-        <!-- <div>
-            <span>您的大名：</span><input id="nameValue" type="text">
-        </div>
-        <div>
-            <span>一句話：</span><input id="lecValue" type="text">
-        </div>
-
-        <button>送出</button> -->
 
         <div>
             <p>你的名字：</p><input type="text" class="form-control" id="name">
@@ -109,8 +143,20 @@
         <button id="send">送出</button>
     </div>
 
-    <div id="dataView"></div>
+    <div id="dataView">
+        
+    </div>
 
+    <div id="dis">
+        <div>
+            <span>您的大名：</span><input id="nameValue" type="text">
+        </div>
+        <div>
+            <span>一句話：</span><input id="lecValue" type="text">
+        </div>
+
+        <button>送出</button>
+    </div>
 
     <script>
 
@@ -130,8 +176,36 @@
                     // $('#dataView').show();
                     $('#dataView').slideDown(500, 'swing');
                     $('html, body').animate({ scrollTop:  $('#dataView').offset().top - 50 }, 'slow');
+                    $('#dis').show();
                 });
                 //產生表單
+                // var div_1 = document.createElement("div");
+                // var msg_1 = document.createElement("p");
+                // var inp_1 = document.createElement("input");
+
+                // var div_2 = document.createElement("div");
+                // var msg_2 = document.createElement("p");
+                // var inp_2 = document.createElement("input");
+
+                // var bt = document.createElement("button");
+
+                // msg_1.innerHTML = '你的名字：';
+                // inp_1.setAttribute('type', 'text');
+                // inp_1.setAttribute('id', 'nameValue');
+
+                // msg_2.innerHTML = '對我的話：';
+                // inp_2.setAttribute('type', 'text');
+                // inp_2.setAttribute('id', 'lecValue');
+
+                // div_1.appendChild(msg_1);
+                // div_1.appendChild(inp_1);
+                // $("#dataView").append(div_1);
+
+                // div_2.appendChild(msg_2);
+                // div_2.appendChild(inp_2);
+                // $("#dataView").append(div_2);
+
+                // $("#dataView").append(bt);
             });
         });
         //發送資料
