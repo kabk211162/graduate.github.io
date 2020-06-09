@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>藝文護照驗證</title>
+
+    <link rel="stylesheet" type="text/css" href="css/allpages.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: #F5DEB3;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .h1_1 {
+            margin: 2em auto;
+            width: 9em;
+            width: fit-content;
+
+        }
+
+        .container {
+            margin: 3em auto;
+            width: 22em;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .container div {
+            width: 17em;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .container input {
+            font-size: 1.1em;
+            width: 15em;
+            padding: 0.25em;
+            height: 1.25em;
+        }
+
+        .container button {
+            margin: 2em 0;
+            height: 3em;
+            font-size: 1.25em;
+            border-radius: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            background-color: #FFB366;
+        }
+
+        .container button:hover {
+            background-color: #FF8033;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        #dataView {
+            border: 3px black solid;
+            border-radius: 1em;
+            background-color: white;
+            padding: 0.5em;
+            width: 20em;
+            margin: 0 auto;
+            display: none;
+        }
+
+        #correct {
+            display: none;
+            justify-content: space-between;
+            width: fit-content;
+            margin: 1em auto;
+            text-align: center;
+        }
+
+        #error {
+            display: none;
+            justify-content: space-between;
+            width: fit-content;
+            margin: 1em auto;
+            text-align: center;
+        }
+        #c_p{
+            margin: auto 1em;
+        }
+        #e_p{
+            margin: auto 1em;
+        }
+
+        i {
+            font-size: 2em;
+        }
+
+        .fa-check {
+            color: #00FF00;
+        }
+
+        .fa-times {
+            color: red;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <nav style="height: 10vh;">
+        <a href="frontpage.html"><img id="ico" src="icon01.jpg"></a>
+        <ol style="display: none;">
+            <a href="frontpage.html">
+                <li>首頁</li>
+            </a>
+            <a href="works.html">
+                <li>作品介紹</li>
+            </a>
+            <a href="about.html">
+                <li>關於我們</li>
+            </a>
+            <a href="contact.html">
+                <li>聯絡我們</li>
+            </a>
+        </ol>
+        <div class="menu_div"><i class="fas fa-bars" id="menu"></i></div>
+    </nav>
+    <div class="keep"></div>
+
+    <div class="container" id="container">
+        <h1>藝文護照蓋章確認</h1>
+        <div>
+            <p>你的名字：</p><input type="text" class="form-control" id="name">
+        </div>
+        <!-- <div>
+            <p>你的學號：</p><input type="text" class="form-control" id="lec">
+        </div> -->
+
+        <button id="send">送出</button>
+    </div>
+
+    <div id="correct">
+        <i class="fas fa-check"></i>
+        <p id="c_p"></p>
+    </div>
+
+    <div id="error">
+        <i class="fas fa-times"></i>
+        <p id="e_p"></p>
+    </div>
+
+    <div id="dataView">
+        <h2 id="nam">
+            </p>
+            <h6 id="f">
+        </h2>
+        <p id="f_l"></p>
+        <h6 id="s">
+            </h2>
+            <p id="s_l"></p>
+    </div>
+
+    <script>
+        $(function () {
+            $('#send').click(function (e) {
+                var nam = '';
+                var f = '';
+                var f_l = '';
+                var s = '';
+                var s_l = '';
+                var a = 0;
+                var reg = '';
+
+                $('#nam')[0].innerHTML = '';
+                $('#f')[0].innerHTML = '';
+                $('#f_l')[0].innerHTML = '';
+                $('#s')[0].innerHTML = '';
+                $('#s_l')[0].innerHTML = '';
+                //送出資料到後端
+                if ($('#name').val() == '') {
+                    alert('請填寫資料');
+                    return;
+                }
+                $.post('https://script.google.com/macros/s/AKfycbwshOTjr8O50WaTEKRyr5VHjve8rs-1hlDahf4LREqOpU9w-KY/exec', {
+                    name: $('#name').val()
+                }, function (e) {
+                    console.log(e);
+                    for (var i = 0; i < e.length; i++) {
+                        if (e[i] != ',') {
+                            reg += e[i];
+                            s_l = reg;
+                        } else {
+                            switch (a) {
+                                case 0:
+                                    nam = reg;
+                                    reg = '';
+                                    break;
+                                case 1:
+                                    f = reg;
+                                    reg = '';
+                                    break;
+                                case 2:
+                                    f_l = reg;
+                                    reg = '';
+                                    break;
+                                case 3:
+                                    s = reg;
+                                    reg = '';
+                                    break;
+                                case 4:
+                                    s_l = reg;
+                                    reg = '';
+                                    break;
+                            }
+                            a++;
+                        }
+                    }
+                    $('#nam')[0].innerHTML = $('#name').val();
+                    $('#f')[0].innerHTML = f;
+                    $('#f_l')[0].innerHTML = f_l;
+                    $('#s')[0].innerHTML = s;
+                    $('#s_l')[0].innerHTML = s_l;
+                    $('#dataView').show();
+                    $('#dataView').slideDown(500, 'swing');
+                    $('html, body').animate({ scrollTop: $('#dataView').offset().top - 50 }, 'slow');
+
+                    var register = '';
+                    var try_which = 0;
+                    console.log(f);
+                    console.log(f_l);
+                    console.log(s);
+                    console.log(s_l);
+                    if (f == '' || f_l.length < 50) {
+                        register += "第一篇有問題" + '、';
+                        try_which++;
+                    } else {
+                        register += "第一篇心得ok" + '、';
+                    }
+                    if (s == '' || s_l.length < 50) {
+                        register += "第二篇有問題";
+                        try_which++;
+                    } else {
+                        register += "第二篇心得ok";
+                    }
+                    if (try_which == 0) {
+                        $('#c_p')[0].innerHTML = register;
+                        $('#correct').show();
+                        $('#error').hide();
+                        $('#correct')[0].style.display = 'flex';
+                    } else {
+                        $('#e_p')[0].innerHTML = register;
+                        $('#error').show();
+                        $('#correct').hide();
+                        $('#error')[0].style.display = 'flex';
+                    }
+                });
+            });
+        });
+
+        // const proxyurl = "http://escapeplan.nctu.me";
+        // const url = "file:///D:/%E7%95%A2%E8%A3%BD/verify.html"; // site that doesn’t send Access-Control-*
+        // fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+        //     .then(response => response.text())
+        //     .then(contents => console.log(contents))
+        //     .catch(() => console.log("try " + url + " response. Blocked by browser?"))
+    </script>
+</body>
+
+</html>
